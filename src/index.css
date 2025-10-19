@@ -10,7 +10,9 @@
     @slot;
   }
 }
-
+.w-full {
+  width: 50%;
+}
 /** UL Custom Utilities:
 Created to support alignment related utlities like justify, text-align etc with dynamic theming values 
 **/
