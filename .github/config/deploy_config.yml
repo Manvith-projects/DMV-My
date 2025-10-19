@@ -5,7 +5,7 @@
 
 default_screen_deployment_status:
   "login-id": false
-  "login": false
+  "login": true
   "login-password": false
   # All other valid screens (commented out by default):
   # "email-identifier-challenge": true
