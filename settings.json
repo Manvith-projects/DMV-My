@@ -10,7 +10,7 @@
     {
       "tag": "base",
       "attributes": {
-        "href": "https://manvith-projects.github.io/DMV-My/"
+        "href": "https://dmv-my.vercel.app/"
       }
     },
     {
@@ -24,20 +24,13 @@
       "tag": "link",
       "attributes": {
         "rel": "stylesheet",
-        "href": "https://manvith-projects.github.io/DMV-My/assets/shared/style.DGuickOL.css"
+        "href": "https://dmv-my.vercel.app/assets/shared/style.DGuickOL.css"
       }
     },
     {
       "tag": "script",
       "attributes": {
-        "src": "https://manvith-projects.github.io/DMV-My/assets/login-id/index.nqG1K8cK.js",
-        "type": "module"
-      }
-    },
-    {
-      "tag": "script",
-      "attributes": {
-        "src": "https://manvith-projects.github.io/DMV-My/assets/login-password/index.CMX0f1Fz.js",
+        "src": "https://dmv-my.vercel.app/assets/login/index.fFhbgp1e.js",
         "type": "module"
       }
     }
