@@ -98,7 +98,7 @@ jobs:
         uses: ./.github/actions/configure-auth0-screens
         with:
           working-directory: ${{ env.WORKING_DIR }}
-          cdn-url: ${{ secrets.CUSTOM_URL }}
+          cdn-url: ${{ vars.CUSTOM_URL }}
           screens-json: ${{ steps.check-targets.outputs.target_screens }}
 
       - name: Deployment targets
