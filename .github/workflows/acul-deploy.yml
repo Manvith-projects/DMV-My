@@ -73,20 +73,16 @@ jobs:
           echo "Starting build for all screens."
           npm run build --if-present
 
-      - name: Configure AWS credentials
+      - name: Deploy to Vercel
         if: steps.check-targets.outputs.has_targets == 'true'
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: amondnet/vercel-action@v25
+        id: vercel-deploy
         with:
-          role-to-assume: ${{ secrets.AWS_S3_ARN }}
-          aws-region: ${{ secrets.AWS_REGION || 'us-east-1' }}
-          mask-aws-account-id: true
-
-      - name: Upload assets to S3
-        if: steps.check-targets.outputs.has_targets == 'true'
-        uses: ./.github/actions/upload-acul-to-s3
-        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           working-directory: ${{ env.WORKING_DIR }}
-          s3-bucket-name: ${{ secrets.S3_BUCKET_NAME }}
+          vercel-args: '--prod'
 
       - name: Setup Auth0 CLI
         if: steps.check-targets.outputs.has_targets == 'true'
@@ -102,14 +98,15 @@ jobs:
         uses: ./.github/actions/configure-auth0-screens
         with:
           working-directory: ${{ env.WORKING_DIR }}
-          cdn-url: ${{ secrets.S3_CDN_URL }}
+          cdn-url: ${{ steps.vercel-deploy.outputs.preview-url }}
           screens-json: ${{ steps.check-targets.outputs.target_screens }}
 
       - name: Deployment targets
-        if: steps.check-targets.outputs.has_targets == 'false'
+        if: steps.check-targets.outputs.has_targets == 'true'
         shell: bash
         run: |
           echo "ℹ️ No screens are targeted for deployment."
           echo "All screens in deploy_config.yml are set to false."
           echo "Skipping build, upload, and configuration steps."
           echo "To deploy screens, set desired screens to 'true' in .github/config/deploy_config.yml"
+
