@@ -1,4 +1,4 @@
-import "./login/index.fFhbgp1e.js";
+import "./login/index.Bs54wE0T.js";
 import "./shared/vendor.BZxuTLQB.js";
 (function () {
   const t = document.createElement("link").relList;
@@ -30,4 +30,4 @@ import "./shared/vendor.BZxuTLQB.js";
     fetch(e.href, r);
   }
 })();
-//# sourceMappingURL=main.GhQfJG3g.js.map
+//# sourceMappingURL=main.CPFMbSdf.js.map

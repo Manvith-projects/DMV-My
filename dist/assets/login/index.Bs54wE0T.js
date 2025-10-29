@@ -2446,17 +2446,20 @@ function la() {
           u === "top" && s && a.jsx(G, { text: o }),
         ],
       });
-  return a.jsx(Q, {
-    className: "theme-universal",
-    children: a.jsxs(Y, {
-      className: "w-full max-w-[400px] gap-0",
-      children: [
-        a.jsx(Wt, {}),
-        l === "top" && i("top"),
-        a.jsx(oa, {}),
-        a.jsx($t, {}),
-        l === "bottom" && i("bottom"),
-      ],
+  return a.jsx("div", {
+    style: { backgroundColor: "red" },
+    children: a.jsx(Q, {
+      className: "theme-universal",
+      children: a.jsxs(Y, {
+        className: "w-full max-w-[400px] gap-0",
+        children: [
+          a.jsx(Wt, {}),
+          l === "top" && i("top"),
+          a.jsx(oa, {}),
+          a.jsx($t, {}),
+          l === "bottom" && i("bottom"),
+        ],
+      }),
     }),
   });
 }
@@ -2778,4 +2781,4 @@ async function ya() {
 }
 ya();
 export { la as L, ma as a };
-//# sourceMappingURL=index.fFhbgp1e.js.map
+//# sourceMappingURL=index.Bs54wE0T.js.map
