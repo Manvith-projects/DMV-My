@@ -24,20 +24,20 @@
       "tag": "link",
       "attributes": {
         "rel": "stylesheet",
-        "href": "https://manvith-projects.github.io/DMV-My/assets/shared/style.DGuickOL.css"
+        "href": "https://github.com/Manvith-projects/DMV-My/blob/main/dist/assets/shared/style.DGuickOL.css"
       }
     },
     {
       "tag": "script",
       "attributes": {
-        "src": "https://manvith-projects.github.io/DMV-My/assets/login-id/index.nqG1K8cK.js",
+        "src": "https://github.com/Manvith-projects/DMV-My/blob/main/dist/assets/login-id/index.nqG1K8cK.js",
         "type": "module"
       }
     },
     {
       "tag": "script",
       "attributes": {
-        "src": "https://manvith-projects.github.io/DMV-My/assets/login-password/index.CMX0f1Fz.js",
+        "src": "https://github.com/Manvith-projects/DMV-My/blob/main/dist/assets/login-password/index.CMX0f1Fz.js",
         "type": "module"
       }
     }
