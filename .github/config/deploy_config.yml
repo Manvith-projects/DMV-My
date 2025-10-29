@@ -5,8 +5,8 @@
 
 default_screen_deployment_status:
   "login-id": true
-  "login": false
-  "login-password": false
+  "login": true
+  "login-password": true
   # All other valid screens (commented out by default):
   # "email-identifier-challenge": true
   # "interstitial-captcha": true
