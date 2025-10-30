@@ -418,8 +418,13 @@ function Ce() {
                                 onClick: n,
                                 className:
                                   "toggle-password absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400",
-                                "aria-label": "Show password",
-                                children: "👁️",
+                                "aria-label": e
+                                  ? "Hide password"
+                                  : "Show password",
+                                children: t.jsx("i", {
+                                  className: "fa-regular fa-eye",
+                                  "aria-hidden": "true",
+                                }),
                               }),
                             ],
                           }),
@@ -684,7 +689,7 @@ function De(e, r) {
 }
 function Be(e) {
   const r = We(e);
-  Object.keys(r).length !== 0 && (Ke(r), He(r));
+  Object.keys(r).length !== 0 && (He(r), Ke(r));
 }
 function We(e) {
   const r = {};
@@ -695,13 +700,13 @@ function We(e) {
     r
   );
 }
-function Ke(e) {
+function He(e) {
   const r = document.documentElement.style;
   Object.entries(e).forEach(([n, s]) => {
     r.setProperty(n, s);
   });
 }
-function He(e) {
+function Ke(e) {
   S = { ...S, ...e };
 }
 function qe() {
@@ -931,7 +936,7 @@ const st = N(
       defaultVariants: { variant: "default", size: "default" },
     }
   ),
-  K = h.forwardRef(
+  H = h.forwardRef(
     (
       {
         className: e,
@@ -1034,16 +1039,16 @@ const st = N(
       });
     }
   );
-K.displayName = "FloatingLabelField";
+H.displayName = "FloatingLabelField";
 const at = ie,
-  H = h.createContext({}),
+  K = h.createContext({}),
   I = ({ ...e }) =>
-    t.jsx(H.Provider, {
+    t.jsx(K.Provider, {
       value: { name: e.name },
       children: t.jsx(de, { ...e }),
     }),
   q = () => {
-    const e = h.useContext(H),
+    const e = h.useContext(K),
       r = h.useContext(G),
       { getFieldState: n } = ue(),
       s = ce({ name: e.name }),
@@ -1138,7 +1143,7 @@ function F({
     c = lt({ themeState: a ? "error" : "default" });
   return t.jsx("div", {
     className: l("w-full", s),
-    children: t.jsx(K, {
+    children: t.jsx(H, {
       id: i,
       className: l(e, c),
       variant: d,
@@ -1760,4 +1765,4 @@ async function Tt() {
 }
 Tt();
 export { Ce as L, Nt as a };
-//# sourceMappingURL=index.DIEZLsM2.js.map
+//# sourceMappingURL=index.BO9SIy9N.js.map

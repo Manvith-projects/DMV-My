@@ -72,10 +72,14 @@ try {
   );
 
   if (fs.existsSync(viteBin)) {
-    execFileSync(viteBin, { stdio: "inherit" });
+    // Use a shell invocation and quote the path to handle spaces in Windows
+    // user directories (e.g. "C:\Users\Manvith Sai\..."). execFileSync
+    // can fail with EINVAL in some Node versions when calling .cmd files
+    // directly — running via the shell is more robust across platforms.
+    execSync(`"${viteBin}"`, { stdio: "inherit", shell: true });
   } else {
     // Fallback to npx which will run the local or remote vite if available.
-    execSync("npx vite", { stdio: "inherit" });
+    execSync("npx vite", { stdio: "inherit", shell: true });
   }
 } catch (error) {
   console.error(
