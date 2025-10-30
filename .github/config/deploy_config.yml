@@ -4,9 +4,9 @@
 # when the workflow is run without specific overriding inputs.
 
 default_screen_deployment_status:
-  "login-id": true
+  "login-id": false
   "login": true
-  "login-password": true
+  "login-password": false
   # All other valid screens (commented out by default):
   # "email-identifier-challenge": true
   # "interstitial-captcha": true
