@@ -19,7 +19,11 @@ const ULThemePageLayout = ({
   ...rest
 }: ULThemePageLayoutProps) => {
   // Use theme token utilities for page alignment and background.
-  const rootClasses = cn("w-full min-h-screen", "justify-page-layout", className);
+  const rootClasses = cn(
+    "w-full min-h-screen",
+    "justify-page-layout",
+    className
+  );
 
   return (
     <div className={rootClasses} {...rest}>
@@ -107,7 +111,7 @@ const ULThemePageLayout = ({
             </h1>
           </div>
         </div>
-            </div>
+      </div>
 
       {/* Screen content inserted here */}
       {/* Main content wrapper

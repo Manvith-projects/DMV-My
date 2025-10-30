@@ -1,12 +1,25 @@
 import { useEffect } from "react";
 
 import ULThemePageLayout from "@/components/ULThemePageLayout";
+import { applyAuth0Theme } from "@/utils/theme";
 
 import IdentifierForm from "./components/IdentifierForm";
+import { useLoginIdManager } from "./hooks/useLoginIdManager";
 
 function LoginScreen() {
+  const { loginIdInstance, texts } = useLoginIdManager();
+
   useEffect(() => {
-    document.title = "Login";
+    // Prefer SDK-provided page title when available
+    if (texts?.pageTitle) {
+      document.title = texts.pageTitle;
+    } else {
+      document.title = "Login";
+    }
+
+    // Apply theme from SDK instance when screen loads
+    applyAuth0Theme(loginIdInstance);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
