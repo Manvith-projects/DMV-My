@@ -1,5 +1,5 @@
-import "./login/index.htq3QW6u.js";
-import "./shared/vendor.BlA-uXW_.js";
+import "./login/index.DIEZLsM2.js";
+import "./shared/vendor.CtTIV4rL.js";
 (function () {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -30,4 +30,4 @@ import "./shared/vendor.BlA-uXW_.js";
     fetch(e.href, r);
   }
 })();
-//# sourceMappingURL=main.B_ttec7L.js.map
+//# sourceMappingURL=main.xXCj_s4W.js.map

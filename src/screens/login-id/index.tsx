@@ -95,9 +95,11 @@ function LoginScreen() {
                         type="button"
                         onClick={togglePassword}
                         className="toggle-password absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400"
-                        aria-label="Show password"
+                        aria-label={
+                          showPassword ? "Hide password" : "Show password"
+                        }
                       >
-                        👁️
+                        <i className="fa-regular fa-eye" aria-hidden="true"></i>
                       </button>
                     </div>
                     <a
