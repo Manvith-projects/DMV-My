@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import { execSync, execFileSync } from "child_process";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -61,11 +61,28 @@ console.log(
 );
 
 try {
-  execSync("vite", { stdio: "inherit" });
+  // Prefer the locally installed Vite binary inside node_modules/.bin so
+  // we don't rely on a globally-installed `vite` command. On Windows the
+  // binary will be `vite.cmd`.
+  const viteBin = path.join(
+    projectRoot,
+    "node_modules",
+    ".bin",
+    process.platform === "win32" ? "vite.cmd" : "vite"
+  );
+
+  if (fs.existsSync(viteBin)) {
+    execFileSync(viteBin, { stdio: "inherit" });
+  } else {
+    // Fallback to npx which will run the local or remote vite if available.
+    execSync("npx vite", { stdio: "inherit" });
+  }
 } catch (error) {
   console.error(
     `${ANSI_RED}%s${ANSI_RESET}`,
     `Vite server failed to start or exited with an error for screen: ${screenName}.`
   );
-  process.exit(1);
+  // Print the underlying error to help debugging
+  console.error(error && error.stack ? error.stack : error);
+  process.exit(error && error.status ? error.status : 1);
 }
