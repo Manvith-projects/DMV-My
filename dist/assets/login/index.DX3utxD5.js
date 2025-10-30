@@ -4,12 +4,12 @@ import {
   j as t,
   r as h,
   a as N,
-  b as ne,
-  A as se,
+  b as se,
+  A as ne,
   d as ae,
   F as W,
-  e as oe,
-  f as le,
+  e as le,
+  f as oe,
   g as ie,
   C as de,
   u as ue,
@@ -29,14 +29,14 @@ import {
   w as Ne,
   x as ke,
 } from "../shared/vendor.CtTIV4rL.js";
-function l(...e) {
+function o(...e) {
   return te(re(e));
 }
-const M = ({ children: e, className: r, ...n }) => {
-  const s = l("w-full min-h-screen", "justify-page-layout", r);
+const M = ({ children: e, className: r, ...s }) => {
+  const n = o("w-full min-h-screen", "justify-page-layout", r);
   return t.jsxs("div", {
-    className: s,
-    ...n,
+    className: n,
+    ...s,
     children: [
       t.jsx("div", {
         className: "ul-topbar",
@@ -140,7 +140,7 @@ function Pe() {
     document.title = "Login";
   }, []);
   const [e, r] = h.useState(!1),
-    n = () => r((s) => !s);
+    s = () => r((n) => !n);
   return t.jsx(M, {
     className: "theme-universal",
     children: t.jsxs("div", {
@@ -162,7 +162,7 @@ function Pe() {
                   t.jsx("hr", { className: "divider mb-4" }),
                   t.jsxs("form", {
                     className: "login-container",
-                    onSubmit: (s) => s.preventDefault(),
+                    onSubmit: (n) => n.preventDefault(),
                     children: [
                       t.jsxs("div", {
                         className: "wallet-login mb-4 flex items-start gap-3",
@@ -254,7 +254,7 @@ function Pe() {
                               }),
                               t.jsx("button", {
                                 type: "button",
-                                onClick: n,
+                                onClick: s,
                                 className:
                                   "toggle-password absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400",
                                 "aria-label": "Show password",
@@ -300,148 +300,165 @@ function Ce() {
     document.title = "Login";
   }, []);
   const [e, r] = h.useState(!1),
-    n = () => r((s) => !s);
+    s = () => r((n) => !n);
   return t.jsx(M, {
     className: "theme-universal",
     children: t.jsxs("div", {
       className: "login-page min-h-screen flex flex-col z-30",
       children: [
         t.jsx("main", {
-          className: "container mx-auto px-6 -mt-16 mb-16 z-30 max-w-7xl",
+          className:
+            "container mx-auto px-4 sm:px-6 lg:px-8 -mt-16 mb-16 z-30 max-w-7xl",
           children: t.jsx("div", {
-            className: "max-w-7xl mx-auto",
+            className: "max-w-4xl mx-auto",
             children: t.jsx("div", {
-              className: "login-card bg-white rounded overflow-hidden w-full",
+              className:
+                "login-card bg-white rounded overflow-hidden w-full shadow-md",
               children: t.jsxs("div", {
-                className: "p-6",
+                className: "p-4 sm:p-6 md:p-8",
                 children: [
                   t.jsx("h2", {
-                    className: "welcome-title",
+                    className: "welcome-title text-lg sm:text-xl md:text-2xl",
                     children: "Welcome Back",
                   }),
                   t.jsx("hr", { className: "divider mb-4" }),
-                  t.jsxs("form", {
-                    className: "login-container",
-                    onSubmit: (s) => s.preventDefault(),
+                  t.jsxs("div", {
+                    className: "flex flex-col gap-6",
                     children: [
-                      t.jsxs("div", {
-                        className: "wallet-login mb-4 flex items-start gap-3",
+                      t.jsxs("aside", {
+                        className:
+                          "w-full bg-gray-50 rounded p-4 flex flex-col gap-4 justify-center",
                         children: [
-                          t.jsx("div", {
-                            className:
-                              "wallet-icon h-10 w-10 rounded overflow-hidden bg-white flex items-center justify-center",
-                            children: t.jsx("img", {
-                              src: "https://cdn.dmv.ca.gov/dmv-cdn/prod/isam/images/mdl/ca-dmv-wallet-icon.png",
-                              alt: "CA DMV Wallet",
-                              className: "h-full w-full object-contain",
-                            }),
-                          }),
                           t.jsxs("div", {
+                            className: "wallet-login flex items-start gap-3",
                             children: [
-                              t.jsx("a", {
-                                href: "#",
-                                className:
-                                  "wallet-link text-link font-medium links",
-                                children: "Log in with CA DMV Wallet App",
-                              }),
                               t.jsx("div", {
-                                className: "wallet-subtitle text-xs text-muted",
-                                children: "No password needed",
-                              }),
-                            ],
-                          }),
-                        ],
-                      }),
-                      t.jsx("div", {
-                        className: "section-title mb-3",
-                        children: "MyDMV",
-                      }),
-                      t.jsxs("p", {
-                        className: "register-text mb-4 small-note",
-                        children: [
-                          t.jsx("strong", { children: "Not Registered?" }),
-                          " In order to log in, you will first need to",
-                          " ",
-                          t.jsx("a", {
-                            href: "#",
-                            className: "text-link underline links",
-                            children: "create an account",
-                          }),
-                          ".",
-                        ],
-                      }),
-                      t.jsxs("div", {
-                        className: "form-group mb-4",
-                        children: [
-                          t.jsx("label", {
-                            htmlFor: "email",
-                            className: "form-label label-text",
-                            children: "Email",
-                          }),
-                          t.jsx("input", {
-                            id: "email",
-                            name: "email",
-                            type: "email",
-                            className: "form-input input-field w-full",
-                            placeholder: "Email",
-                          }),
-                          t.jsx("a", {
-                            href: "#",
-                            className:
-                              "helper-link text-link mt-2 inline-block links",
-                            children:
-                              "No longer have access to your email address?",
-                          }),
-                        ],
-                      }),
-                      t.jsxs("div", {
-                        className: "form-group mb-4",
-                        children: [
-                          t.jsx("label", {
-                            htmlFor: "password",
-                            className: "form-label label-text",
-                            children: "Password",
-                          }),
-                          t.jsxs("div", {
-                            className: "password-wrapper relative",
-                            children: [
-                              t.jsx("input", {
-                                id: "password",
-                                name: "password",
-                                type: e ? "text" : "password",
                                 className:
-                                  "form-input input-field w-full pr-10",
-                                placeholder: "Password",
-                              }),
-                              t.jsx("button", {
-                                type: "button",
-                                onClick: n,
-                                className:
-                                  "toggle-password absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400",
-                                "aria-label": e
-                                  ? "Hide password"
-                                  : "Show password",
-                                children: t.jsx("i", {
-                                  className: "fa-regular fa-eye",
-                                  "aria-hidden": "true",
+                                  "wallet-icon h-10 w-10 rounded overflow-hidden bg-white flex items-center justify-center",
+                                children: t.jsx("img", {
+                                  src: "https://cdn.dmv.ca.gov/dmv-cdn/prod/isam/images/mdl/ca-dmv-wallet-icon.png",
+                                  alt: "CA DMV Wallet",
+                                  className:
+                                    "h-full w-full object-contain max-h-12 max-w-12",
                                 }),
                               }),
+                              t.jsxs("div", {
+                                children: [
+                                  t.jsx("a", {
+                                    href: "#",
+                                    className:
+                                      "wallet-link text-link font-medium links",
+                                    children: "Log in with CA DMV Wallet App",
+                                  }),
+                                  t.jsx("div", {
+                                    className:
+                                      "wallet-subtitle text-xs text-muted",
+                                    children: "No password needed",
+                                  }),
+                                ],
+                              }),
                             ],
                           }),
-                          t.jsx("a", {
-                            href: "#",
-                            className:
-                              "helper-link text-link mt-2 inline-block links",
-                            children: "Forgot your password?",
+                          t.jsx("div", {
+                            className: "section-title mt-2",
+                            children: "MyDMV",
+                          }),
+                          t.jsxs("p", {
+                            className: "register-text mb-0 small-note text-sm",
+                            children: [
+                              t.jsx("strong", { children: "Not Registered?" }),
+                              " In order to log in, you will first need to",
+                              t.jsx("a", {
+                                href: "#",
+                                className: "text-link underline links ml-1",
+                                children: "create an account",
+                              }),
+                              ".",
+                            ],
                           }),
                         ],
                       }),
-                      t.jsx("div", {
-                        className: "mb-6",
-                        children: t.jsx("button", {
-                          type: "submit",
-                          className: "login-button",
-                          children: "Log In",
+                      t.jsx("section", {
+                        className: "w-full",
+                        children: t.jsxs("form", {
+                          className: "login-container",
+                          onSubmit: (n) => n.preventDefault(),
+                          children: [
+                            t.jsxs("div", {
+                              className: "form-group mb-4",
+                              children: [
+                                t.jsx("label", {
+                                  htmlFor: "email",
+                                  className: "form-label label-text",
+                                  children: "Email",
+                                }),
+                                t.jsx("input", {
+                                  id: "email",
+                                  name: "email",
+                                  type: "email",
+                                  className: "form-input input-field w-full",
+                                  placeholder: "Email",
+                                }),
+                                t.jsx("a", {
+                                  href: "#",
+                                  className:
+                                    "helper-link text-link mt-2 inline-block links text-sm",
+                                  children:
+                                    "No longer have access to your email address?",
+                                }),
+                              ],
+                            }),
+                            t.jsxs("div", {
+                              className: "form-group mb-4",
+                              children: [
+                                t.jsx("label", {
+                                  htmlFor: "password",
+                                  className: "form-label label-text",
+                                  children: "Password",
+                                }),
+                                t.jsxs("div", {
+                                  className: "password-wrapper relative",
+                                  children: [
+                                    t.jsx("input", {
+                                      id: "password",
+                                      name: "password",
+                                      type: e ? "text" : "password",
+                                      className:
+                                        "form-input input-field w-full pr-10",
+                                      placeholder: "Password",
+                                    }),
+                                    t.jsx("button", {
+                                      type: "button",
+                                      onClick: s,
+                                      className:
+                                        "toggle-password absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400",
+                                      "aria-label": e
+                                        ? "Hide password"
+                                        : "Show password",
+                                      children: t.jsx("i", {
+                                        className: "fa-regular fa-eye",
+                                        "aria-hidden": "true",
+                                      }),
+                                    }),
+                                  ],
+                                }),
+                                t.jsx("a", {
+                                  href: "#",
+                                  className:
+                                    "helper-link text-link mt-2 inline-block links text-sm",
+                                  children: "Forgot your password?",
+                                }),
+                              ],
+                            }),
+                            t.jsx("div", {
+                              className: "mb-6",
+                              children: t.jsx("button", {
+                                type: "submit",
+                                className: "login-button w-full",
+                                children: "Log In",
+                              }),
+                            }),
+                          ],
                         }),
                       }),
                     ],
@@ -464,15 +481,15 @@ const Ee = Object.freeze(
 function Fe({ className: e, ...r }) {
   return t.jsx("div", {
     "data-slot": "card",
-    className: l(
+    className: o(
       "bg-card text-card-foreground shadow-bevel-2xl flex flex-col gap-6 rounded-4xl py-6",
       e
     ),
     ...r,
   });
 }
-const Le = ({ children: e, className: r, ...n }) => {
-  const s = l(
+const Le = ({ children: e, className: r, ...s }) => {
+  const n = o(
     "px-10",
     "py-10",
     "theme-universal:bg-widget-bg",
@@ -482,7 +499,7 @@ const Le = ({ children: e, className: r, ...n }) => {
     "theme-universal:border-(length:--border-widget)",
     r
   );
-  return t.jsx(Fe, { className: s, ...n, children: e });
+  return t.jsx(Fe, { className: n, ...s, children: e });
 };
 function Te(e) {
   const r = {};
@@ -524,7 +541,7 @@ function Te(e) {
     r
   );
 }
-function R(e, r, n = 10) {
+function R(e, r, s = 10) {
   switch (e) {
     case "pill":
       return 9999;
@@ -532,20 +549,20 @@ function R(e, r, n = 10) {
       return 0;
     case "rounded":
     default:
-      return r || n;
+      return r || s;
   }
 }
 function ze(e) {
   const r = {},
-    n = e.buttons_style
+    s = e.buttons_style
       ? R(e.buttons_style, e.button_border_radius)
       : e.button_border_radius,
-    s = e.inputs_style
+    n = e.inputs_style
       ? R(e.inputs_style, e.input_border_radius)
       : e.input_border_radius;
   return (
-    n !== void 0 && (r["--ul-theme-border-button-border-radius"] = `${n}px`),
-    s !== void 0 && (r["--ul-theme-border-input-border-radius"] = `${s}px`),
+    s !== void 0 && (r["--ul-theme-border-button-border-radius"] = `${s}px`),
+    n !== void 0 && (r["--ul-theme-border-input-border-radius"] = `${n}px`),
     e.widget_corner_radius &&
       (r["--ul-theme-border-widget-corner-radius"] =
         `${e.widget_corner_radius}px`),
@@ -571,27 +588,27 @@ function Ae(e) {
   const r = {};
   e.reference_text_size &&
     (r["--ul-theme-font-reference-text-size"] = `${e.reference_text_size}px`);
-  const n = (s, a) => {
-    if (s?.size) {
-      const o = s.size;
+  const s = (n, a) => {
+    if (n?.size) {
+      const l = n.size;
       if (e.reference_text_size) {
-        const d = (e.reference_text_size * o) / 100;
+        const d = (e.reference_text_size * l) / 100;
         r[`--ul-theme-font-${a}-size`] = `${d}px`;
       } else {
-        const i = o / 100;
+        const i = l / 100;
         r[`--ul-theme-font-${a}-size`] = `${i}rem`;
       }
     }
-    s?.bold !== void 0 &&
-      (r[`--ul-theme-font-${a}-weight`] = s.bold ? "700" : "400");
+    n?.bold !== void 0 &&
+      (r[`--ul-theme-font-${a}-weight`] = n.bold ? "700" : "400");
   };
   return (
-    n(e.title, "title"),
-    n(e.subtitle, "subtitle"),
-    n(e.body_text, "body-text"),
-    n(e.buttons_text, "buttons-text"),
-    n(e.input_labels, "input-labels"),
-    n(e.links, "links"),
+    s(e.title, "title"),
+    s(e.subtitle, "subtitle"),
+    s(e.body_text, "body-text"),
+    s(e.buttons_text, "buttons-text"),
+    s(e.input_labels, "input-labels"),
+    s(e.links, "links"),
     e.links_style && (r["--ul-theme-font-links-style"] = e.links_style),
     r
   );
@@ -608,8 +625,8 @@ function Oe(e) {
           : `url("${e.background_image_url}")`),
     e.page_layout)
   ) {
-    const n = { center: "center", left: "flex-start", right: "flex-end" };
-    r["--ul-theme-page-bg-page-layout"] = n[e.page_layout] || "center";
+    const s = { center: "center", left: "flex-start", right: "flex-end" };
+    r["--ul-theme-page-bg-page-layout"] = s[e.page_layout] || "center";
   }
   return r;
 }
@@ -621,18 +638,18 @@ function Ie(e) {
       (r["--ul-theme-widget-logo-height"] = `${e.logo_height}px`),
     e.logo_position)
   ) {
-    const n = {
+    const s = {
       center: "center",
       left: "flex-start",
       right: "flex-end",
       none: "none",
     };
-    r["--ul-theme-widget-logo-position"] = n[e.logo_position] || "center";
+    r["--ul-theme-widget-logo-position"] = s[e.logo_position] || "center";
   }
   if (e.header_text_alignment) {
     r["--ul-theme-widget-header-text-alignment"] = e.header_text_alignment;
-    const n = { center: "center", left: "left", right: "right" };
-    r["--text-align-header"] = n[e.header_text_alignment] || "center";
+    const s = { center: "center", left: "left", right: "right" };
+    r["--text-align-header"] = s[e.header_text_alignment] || "center";
   }
   return (
     e.social_buttons_layout &&
@@ -654,10 +671,10 @@ function Me(e) {
 }
 function Ue(e) {
   const r = e.branding?.themes?.default || {},
-    n = D(e.branding?.settings),
-    s = $e(r),
+    s = D(e.branding?.settings),
+    n = $e(r),
     a = D(e.organization?.branding);
-  return { ...n, ...s, ...a };
+  return { ...s, ...n, ...a };
 }
 function $e(e) {
   return {
@@ -672,20 +689,20 @@ function D(e) {
   const r = {};
   return (e && Re(e, Ve, r), r);
 }
-function Re(e, r, n) {
-  Object.entries(r).forEach(([s, a]) => {
-    const o = De(e, s);
-    o &&
-      typeof o == "string" &&
+function Re(e, r, s) {
+  Object.entries(r).forEach(([n, a]) => {
+    const l = De(e, n);
+    l &&
+      typeof l == "string" &&
       (a === "--ul-theme-widget-logo-url"
-        ? (n[a] = `"${o}"`)
+        ? (s[a] = `"${l}"`)
         : a === "--ul-theme-widget-logo-height"
-          ? (n[a] = typeof o == "number" ? `${o}px` : o)
-          : (n[a] = o));
+          ? (s[a] = typeof l == "number" ? `${l}px` : l)
+          : (s[a] = l));
   });
 }
 function De(e, r) {
-  return r.split(".").reduce((n, s) => n?.[s], e);
+  return r.split(".").reduce((s, n) => s?.[n], e);
 }
 function Be(e) {
   const r = We(e);
@@ -694,16 +711,16 @@ function Be(e) {
 function We(e) {
   const r = {};
   return (
-    Object.entries(e).forEach(([n, s]) => {
-      S[n] !== s && (r[n] = s);
+    Object.entries(e).forEach(([s, n]) => {
+      S[s] !== n && (r[s] = n);
     }),
     r
   );
 }
 function He(e) {
   const r = document.documentElement.style;
-  Object.entries(e).forEach(([n, s]) => {
-    r.setProperty(n, s);
+  Object.entries(e).forEach(([s, n]) => {
+    r.setProperty(s, n);
   });
 }
 function Ke(e) {
@@ -733,15 +750,15 @@ const Ge = N(
 function Je({
   className: e,
   children: r,
-  variant: n,
-  underline: s,
+  variant: s,
+  underline: n,
   ref: a,
-  ...o
+  ...l
 }) {
   return t.jsx("a", {
     ref: a,
-    className: l(Ge({ variant: n, underline: s }), e),
-    ...o,
+    className: o(Ge({ variant: s, underline: n }), e),
+    ...l,
     children: r,
   });
 }
@@ -750,18 +767,18 @@ const z = (e) =>
       .getPropertyValue(e)
       .trim()
       .replace(/^"(.*)"$/, "$1"),
-  A = ({ children: e, className: r, disabled: n = !1, ref: s, ...a }) => {
-    const o =
+  A = ({ children: e, className: r, disabled: s = !1, ref: n, ...a }) => {
+    const l =
         "text-link-focus text-(length:--ul-theme-font-links-size) font-(weight:--ul-theme-font-links-weight) focus:rounded-(--ul-theme-border-links-border-radius) hover:text-link-focus/80",
-      i = n ? "pointer-events-none text-muted cursor-not-allowed" : "",
+      i = s ? "pointer-events-none text-muted cursor-not-allowed" : "",
       d =
         "theme-universal:focus:outline-none theme-universal:focus:ring-4 theme-universal:focus:ring-base-focus/15 theme-universal:focus:bg-base-focus/15",
       c = z("--ul-theme-font-links-style") === "normal" ? "none" : "always";
     return t.jsx(Je, {
-      ref: s,
-      className: l(o, i, d, r),
+      ref: n,
+      className: o(l, i, d, r),
       underline: c,
-      "aria-disabled": n,
+      "aria-disabled": s,
       ...a,
       children: e,
     });
@@ -771,30 +788,30 @@ const z = (e) =>
     const r = window.location.origin;
     try {
       if (e.startsWith("http://") || e.startsWith("https://")) {
-        const s = new URL(e);
-        return r + s.pathname + s.search + s.hash;
+        const n = new URL(e);
+        return r + n.pathname + n.search + n.hash;
       }
       if (e.startsWith("/")) {
-        const s = new URL(e, r);
-        return r + s.pathname + s.search + s.hash;
+        const n = new URL(e, r);
+        return r + n.pathname + n.search + n.hash;
       }
-      const n = new URL(e, window.location.href);
-      return r + n.pathname + n.search + n.hash;
-    } catch (n) {
+      const s = new URL(e, window.location.href);
+      return r + s.pathname + s.search + s.hash;
+    } catch (s) {
       return (
-        console.error("Failed to rebase URL:", n, { originalLink: e }),
+        console.error("Failed to rebase URL:", s, { originalLink: e }),
         e
       );
     }
   },
   Qe = (e, r) => r(),
   E = () => {
-    const e = h.useMemo(() => new ne(), []),
-      { transaction: r, screen: n } = e,
+    const e = h.useMemo(() => new se(), []),
+      { transaction: r, screen: s } = e,
       {
-        isSignupEnabled: s,
+        isSignupEnabled: n,
         isForgotPasswordEnabled: a,
-        isPasskeyEnabled: o,
+        isPasskeyEnabled: l,
       } = r,
       {
         signupLink: i,
@@ -804,21 +821,21 @@ const z = (e) =>
         editIdentifierLink: u,
         links: f,
         data: p,
-      } = n;
+      } = s;
     return {
       loginPasswordInstance: e,
       handleLoginPassword: async (b, _, j) => {
         const v = { username: b?.trim() || "", password: _?.trim() || "" };
-        (n.isCaptchaAvailable && j?.trim() && (v.captcha = j.trim()),
+        (s.isCaptchaAvailable && j?.trim() && (v.captcha = j.trim()),
           Qe(`LoginPassword with options: ${JSON.stringify(v)}`, () =>
             e.login(v)
           ));
       },
       texts: c || {},
-      isSignupEnabled: s === !0,
+      isSignupEnabled: n === !0,
       isForgotPasswordEnabled: a === !0,
-      isPasskeyEnabled: o === !0,
-      isCaptchaAvailable: n.isCaptchaAvailable === !0,
+      isPasskeyEnabled: l === !0,
+      isCaptchaAvailable: s.isCaptchaAvailable === !0,
       errors: e.getErrors(),
       links: f,
       editIdentifierLink: u,
@@ -829,23 +846,23 @@ const z = (e) =>
     };
   };
 function Xe() {
-  const { isSignupEnabled: e, signupLink: r, texts: n } = E();
+  const { isSignupEnabled: e, signupLink: r, texts: s } = E();
   if (!e) return null;
-  const s = O(r),
-    a = n?.footerText || "Don't have an account?",
-    o = n?.footerLinkText || "Sign up";
+  const n = O(r),
+    a = s?.footerText || "Don't have an account?",
+    l = s?.footerLinkText || "Sign up";
   return t.jsxs("div", {
     className: "mt-4 text-left",
     children: [
       t.jsx("span", { className: "text-sm pr-1", children: a }),
-      s && t.jsx(A, { href: s, children: o }),
+      n && t.jsx(A, { href: n, children: l }),
     ],
   });
 }
 function Ye({ className: e, ...r }) {
-  return t.jsx(se, {
+  return t.jsx(ne, {
     "data-slot": "avatar",
-    className: l(
+    className: o(
       "relative flex size-8 shrink-0 overflow-hidden rounded-full",
       e
     ),
@@ -855,54 +872,54 @@ function Ye({ className: e, ...r }) {
 function Ze({ className: e, ...r }) {
   return t.jsx(ae, {
     "data-slot": "avatar-image",
-    className: l("aspect-square size-full", e),
+    className: o("aspect-square size-full", e),
     ...r,
   });
 }
-const et = ({ imageUrl: e, altText: r, className: n, ...s }) => {
+const et = ({ imageUrl: e, altText: r, className: s, ...n }) => {
     const a = z("--ul-theme-widget-logo-url"),
-      o = z("--ul-theme-widget-logo-position") === "none",
+      l = z("--ul-theme-widget-logo-position") === "none",
       i = "flex flex-wrap justify-widget-logo",
       d = "h-(--height-widget-logo)",
       c = a || e;
     return (
-      !o &&
+      !l &&
       t.jsx("div", {
-        className: l(i, n),
+        className: o(i, s),
         children: t.jsx(Ye, {
           className: "size-auto rounded-none",
           children: t.jsx(Ze, {
             src: c,
             alt: r,
-            className: l(d),
+            className: o(d),
             loading: "eager",
             decoding: "async",
             fetchPriority: "high",
-            ...s,
+            ...n,
           }),
         }),
       })
     );
   },
-  tt = ({ children: e, className: r, ...n }) =>
+  tt = ({ children: e, className: r, ...s }) =>
     t.jsx("p", {
-      className: l(
+      className: o(
         "mb-4 text-body-text justify-text-header text-(length:--ul-theme-font-subtitle-size) font-subtitle",
         r
       ),
-      ...n,
+      ...s,
       children: e,
     }),
-  rt = ({ children: e, className: r, ...n }) =>
+  rt = ({ children: e, className: r, ...s }) =>
     t.jsx("h1", {
-      className: l(
+      className: o(
         "mt-6 mb-4 text-header justify-text-header text-(length:--ul-theme-font-title-size) font-title",
         r
       ),
-      ...n,
+      ...s,
       children: e,
     });
-function nt() {
+function st() {
   const { texts: e } = E(),
     r = e?.logoAltText || "Application Logo";
   return t.jsxs(t.Fragment, {
@@ -917,7 +934,7 @@ function nt() {
     ],
   });
 }
-const st = N(
+const nt = N(
     "bg-input aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive theme-default:active:scale-[0.99] relative box-border inline-flex w-full shrink-0 cursor-text items-center justify-center text-sm transition-[color,box-shadow] duration-150 ease-in-out outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
     {
       variants: {
@@ -941,10 +958,10 @@ const st = N(
       {
         className: e,
         variant: r,
-        size: n,
-        error: s,
+        size: s,
+        error: n,
         helperText: a,
-        label: o,
+        label: l,
         startAdornment: i,
         endAdornment: d,
         ...c
@@ -967,8 +984,8 @@ const st = N(
       return t.jsxs("div", {
         children: [
           t.jsxs(W, {
-            className: l(
-              st({ variant: s ? "error" : r, size: n }),
+            className: o(
+              nt({ variant: n ? "error" : r, size: s }),
               "group relative items-end gap-0.5",
               b &&
                 "bg-input-muted text-input-foreground cursor-not-allowed opacity-50",
@@ -978,17 +995,17 @@ const st = N(
               e
             ),
             children: [
-              t.jsx(oe, {
+              t.jsx(le, {
                 htmlFor: c.id,
-                className: l(
+                className: o(
                   "pointer-events-none absolute top-1/2 left-4 z-[10] -translate-y-1/2 text-sm transition-all duration-150 ease-in-out origin-left",
                   i && "left-0",
                   k &&
                     "scale-80 -translate-y-[1.18rem] top-2 z-10 bg-input px-1",
-                  s ? "text-destructive-foreground" : "text-muted-foreground",
-                  u && !s && "text-primary"
+                  n ? "text-destructive-foreground" : "text-muted-foreground",
+                  u && !n && "text-primary"
                 ),
-                children: o,
+                children: l,
               }),
               i &&
                 t.jsx("div", {
@@ -998,9 +1015,9 @@ const st = N(
                 }),
               t.jsx("div", {
                 className: "relative flex-1",
-                children: t.jsx(le, {
+                children: t.jsx(oe, {
                   id: c.id,
-                  className: l(
+                  className: o(
                     "h-14 w-full flex-1 rounded-2xl bg-transparent px-3 py-4 outline-none file:border-0 file:bg-transparent file:text-sm file:font-medium",
                     "autofill:bg-transparent",
                     "autofill:[-webkit-text-fill-color:inherit]",
@@ -1009,8 +1026,8 @@ const st = N(
                       "bg-input-muted text-input-foreground cursor-not-allowed opacity-50",
                     i ? "rounded-l-none pl-0" : "pl-3",
                     d ? "rounded-r-none pr-0" : "pr-3",
-                    n === "sm" && "h-12 py-3 text-sm",
-                    n === "lg" && "h-16 py-5 text-base"
+                    s === "sm" && "h-12 py-3 text-sm",
+                    s === "lg" && "h-16 py-5 text-base"
                   ),
                   ...c,
                   ref: m,
@@ -1029,9 +1046,9 @@ const st = N(
           }),
           a &&
             t.jsx("p", {
-              className: l(
+              className: o(
                 "mt-1.5 text-xs",
-                s ? "text-destructive-foreground" : "text-muted-foreground"
+                n ? "text-destructive-foreground" : "text-muted-foreground"
               ),
               children: a,
             }),
@@ -1050,46 +1067,46 @@ const at = ie,
   q = () => {
     const e = h.useContext(K),
       r = h.useContext(G),
-      { getFieldState: n } = ue(),
-      s = ce({ name: e.name }),
-      a = n(e.name, s);
+      { getFieldState: s } = ue(),
+      n = ce({ name: e.name }),
+      a = s(e.name, n);
     if (!e) throw new Error("useFormField should be used within <FormField>");
-    const { id: o } = r;
+    const { id: l } = r;
     return {
-      id: o,
+      id: l,
       name: e.name,
-      formItemId: `${o}-form-item`,
-      formDescriptionId: `${o}-form-item-description`,
-      formMessageId: `${o}-form-item-message`,
+      formItemId: `${l}-form-item`,
+      formDescriptionId: `${l}-form-item-description`,
+      formMessageId: `${l}-form-item-message`,
       ...a,
     };
   },
   G = h.createContext({});
 function V({ className: e, ...r }) {
-  const n = h.useId();
+  const s = h.useId();
   return t.jsx(G.Provider, {
-    value: { id: n },
+    value: { id: s },
     children: t.jsx(W, {
       "data-slot": "form-item",
-      className: l("grid", e),
+      className: o("grid", e),
       ...r,
     }),
   });
 }
-function ot({ className: e, ...r }) {
-  const { error: n, formMessageId: s } = q(),
-    a = n ? String(n?.message ?? "") : r.children;
+function lt({ className: e, ...r }) {
+  const { error: s, formMessageId: n } = q(),
+    a = s ? String(s?.message ?? "") : r.children;
   return a
     ? t.jsx("p", {
         "data-slot": "form-message",
-        id: s,
-        className: l("text-destructive text-sm", e),
+        id: n,
+        className: o("text-destructive text-sm", e),
         ...r,
         children: a,
       })
     : null;
 }
-const lt = N(
+const ot = N(
   [
     "mb-2",
     "theme-universal:bg-input-bg",
@@ -1133,61 +1150,61 @@ const lt = N(
 function F({
   className: e,
   variant: r = "default",
-  size: n = "default",
-  wrapperClassName: s,
+  size: s = "default",
+  wrapperClassName: n,
   error: a,
-  ...o
+  ...l
 }) {
   const { formItemId: i } = q(),
     d = a ? "error" : r,
-    c = lt({ themeState: a ? "error" : "default" });
+    c = ot({ themeState: a ? "error" : "default" });
   return t.jsx("div", {
-    className: l("w-full", s),
+    className: o("w-full", n),
     children: t.jsx(H, {
       id: i,
-      className: l(e, c),
+      className: o(e, c),
       variant: d,
-      size: n,
+      size: s,
       error: a,
-      ...o,
+      ...l,
     }),
   });
 }
 F.displayName = "ULThemeFloatingLabelField";
-const C = ({ sdkError: e, hasFormError: r, showIcon: n = !0, className: s }) =>
+const C = ({ sdkError: e, hasFormError: r, showIcon: s = !0, className: n }) =>
   !e && !r
     ? null
     : t.jsxs("div", {
-        className: l(
+        className: o(
           "flex mb-2 items-center text-sm font-medium theme-universal:text-error",
-          s
+          n
         ),
         role: "alert",
         "aria-live": "polite",
         children: [
-          n && t.jsx(me, { className: "h-4 w-4 mr-1 flex-shrink-0" }),
+          s && t.jsx(me, { className: "h-4 w-4 mr-1 flex-shrink-0" }),
           e
             ? t.jsx("p", {
                 className:
                   "text-destructive text-sm theme-universal:text-error",
                 children: e,
               })
-            : t.jsx(ot, { className: "theme-universal:text-error" }),
+            : t.jsx(lt, { className: "theme-universal:text-error" }),
         ],
       });
 C.displayName = "ULThemeFormMessage";
 const it = ({
     name: e,
     control: r,
-    rules: n,
-    label: s,
+    rules: s,
+    label: n,
     imageUrl: a,
-    imageAltText: o,
+    imageAltText: l,
     sdkError: i,
     className: d,
   }) => {
-    const c = l("space-y-2", d),
-      m = l(
+    const c = o("space-y-2", d),
+      m = o(
         "flex justify-center p-8 rounded",
         "theme-universal:bg-input-bg",
         "theme-universal:border",
@@ -1202,20 +1219,20 @@ const it = ({
               className: m,
               children: t.jsx("img", {
                 src: a,
-                alt: o,
+                alt: l,
                 className: "object-contain",
               }),
             }),
             t.jsx(I, {
               control: r,
               name: e,
-              rules: n,
+              rules: s,
               render: ({ field: u, fieldState: f }) =>
                 t.jsxs(V, {
                   children: [
                     t.jsx(F, {
                       ...u,
-                      label: s,
+                      label: n,
                       type: "text",
                       autoComplete: "off",
                       error: !!f.error || !!i,
@@ -1248,27 +1265,27 @@ const it = ({
       defaultVariants: { variant: "default" },
     }
   );
-function ut({ className: e, variant: r, ...n }) {
+function ut({ className: e, variant: r, ...s }) {
   return t.jsx("div", {
     "data-slot": "alert",
     role: "alert",
-    className: l(dt({ variant: r }), e),
-    ...n,
+    className: o(dt({ variant: r }), e),
+    ...s,
   });
 }
 function ct({ className: e, ...r }) {
   return t.jsx("div", {
     "data-slot": "alert-title",
-    className: l(
+    className: o(
       "col-start-2 line-clamp-1 flex h-auto min-h-4 leading-4.5 font-medium tracking-tight",
       e
     ),
     ...r,
   });
 }
-function mt({ variant: e = "destructive", className: r, ...n }) {
-  const s = {
-      destructive: l(
+function mt({ variant: e = "destructive", className: r, ...s }) {
+  const n = {
+      destructive: o(
         "p-4",
         "theme-universal:bg-error",
         "theme-universal:text-(--ul-theme-color-primary-button-label)",
@@ -1277,16 +1294,16 @@ function mt({ variant: e = "destructive", className: r, ...n }) {
         "theme-universal:text-(length:--ul-theme-font-body-text-size)"
       ),
     },
-    a = l(e && s[e]);
-  return t.jsx(ut, { variant: e, className: l(r, a), ...n });
+    a = o(e && n[e]);
+  return t.jsx(ut, { variant: e, className: o(r, a), ...s });
 }
 function ht({ className: e, ...r }) {
-  const n = l(
+  const s = o(
     "theme-universal:text-(--ul-theme-color-primary-button-label)",
     "theme-universal:font-body",
     "theme-universal:text-(length:--ul-theme-font-body-text-size)"
   );
-  return t.jsx(ct, { className: l(e, n), ...r });
+  return t.jsx(ct, { className: o(e, s), ...r });
 }
 function ft({ delay: e = 0, ...r }) {
   return t.jsx(ve, { "data-slot": "tooltip-provider", delay: e, ...r });
@@ -1300,22 +1317,22 @@ function gt({ ...e }) {
 function xt({
   className: e,
   arrow: r,
-  side: n,
-  sideOffset: s = 8,
+  side: s,
+  sideOffset: n = 8,
   children: a,
-  ...o
+  ...l
 }) {
   return t.jsx(pe, {
     children: t.jsx(ge, {
-      side: n,
-      sideOffset: s,
+      side: s,
+      sideOffset: n,
       children: t.jsxs(xe, {
         "data-slot": "tooltip-content",
-        className: l(
+        className: o(
           "bg-popover text-popover-foreground data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 shadow-bevel-lg z-50 w-fit origin-(--radix-tooltip-content-transform-origin) rounded-xl px-2 py-1 text-sm text-balance",
           e
         ),
-        ...o,
+        ...l,
         children: [
           a,
           r
@@ -1329,18 +1346,18 @@ function xt({
     }),
   });
 }
-const J = ({ onVisibilityToggle: e, buttonClassName: r, ...n }) => {
-  const [s, a] = h.useState(!1),
-    o = () => {
-      const d = !s;
+const J = ({ onVisibilityToggle: e, buttonClassName: r, ...s }) => {
+  const [n, a] = h.useState(!1),
+    l = () => {
+      const d = !n;
       (a(d), e?.(d));
     },
     i = t.jsxs(pt, {
       children: [
         t.jsx(gt, {
           type: "button",
-          onClick: o,
-          className: l(
+          onClick: l,
+          className: o(
             "cursor-pointer h-full w-full min-w-[44px] mr-[-5px]",
             "theme-universal:rounded-r-input theme-universal:rounded-l-none",
             "theme-universal:text-input-labels",
@@ -1351,17 +1368,17 @@ const J = ({ onVisibilityToggle: e, buttonClassName: r, ...n }) => {
             "bg-transparent border-none outline-none",
             r
           ),
-          "aria-label": s ? "Hide password" : "Show password",
-          children: s ? t.jsx(we, {}) : t.jsx(ye, {}),
+          "aria-label": n ? "Hide password" : "Show password",
+          children: n ? t.jsx(we, {}) : t.jsx(ye, {}),
         }),
         t.jsx(xt, {
           sideOffset: 0,
           className: "bg-black text-white -mb-2 ml-0.5",
-          children: s ? "Hide password" : "Show password",
+          children: n ? "Hide password" : "Show password",
         }),
       ],
     });
-  return t.jsx(F, { ...n, type: s ? "text" : "password", endAdornment: i });
+  return t.jsx(F, { ...s, type: n ? "text" : "password", endAdornment: i });
 };
 J.displayName = "ULThemePasswordField";
 const bt = N(
@@ -1392,21 +1409,21 @@ const bt = N(
 function vt({
   className: e,
   variant: r,
-  size: n,
-  render: s = t.jsx("button", {}),
+  size: s,
+  render: n = t.jsx("button", {}),
   ...a
 }) {
-  const o = { className: l(bt({ variant: r, size: n }), e) };
-  return je({ render: s, props: { ...o, ...a } });
+  const l = { className: o(bt({ variant: r, size: s }), e) };
+  return je({ render: n, props: { ...l, ...a } });
 }
 function wt({
   variant: e = "primary",
   size: r = "default",
-  className: n,
-  ...s
+  className: s,
+  ...n
 }) {
   const a = {
-      primary: l(
+      primary: o(
         "p-6 border-0",
         "cursor-pointer",
         "theme-universal:bg-primary-button",
@@ -1423,52 +1440,52 @@ function wt({
       ghost: "",
       link: "",
     },
-    o = {
-      default: l(
+    l = {
+      default: o(
         "theme-universal:rounded-button",
         "theme-universal:font-button",
         "theme-universal:text-(length:--ul-theme-font-buttons-text-size)"
       ),
-      xs: l(
+      xs: o(
         "theme-universal:rounded-button",
         "theme-universal:font-button",
         "theme-universal:text-(length:--ul-theme-font-buttons-text-size)"
       ),
-      sm: l(
+      sm: o(
         "theme-universal:rounded-button",
         "theme-universal:font-button",
         "theme-universal:text-(length:--ul-theme-font-buttons-text-size)"
       ),
-      lg: l(
+      lg: o(
         "theme-universal:rounded-button",
         "theme-universal:font-button",
         "theme-universal:text-(length:--ul-theme-font-buttons-text-size)"
       ),
-      icon: l("theme-universal:rounded-button"),
+      icon: o("theme-universal:rounded-button"),
     },
-    i = l(e && a[e], r && o[r]);
-  return t.jsx(vt, { variant: e, size: r, className: l(n, i), ...s });
+    i = o(e && a[e], r && l[r]);
+  return t.jsx(vt, { variant: e, size: r, className: o(s, i), ...n });
 }
 const P = (e, r) =>
-    Array.isArray(r) ? r.find((s) => s.field === e)?.message : void 0,
-  yt = (e, r, n) => {
-    const s = [];
+    Array.isArray(r) ? r.find((n) => n.field === e)?.message : void 0,
+  yt = (e, r, s) => {
+    const n = [];
     return (
-      e && s.push("email"),
-      r && s.push("phone"),
-      n && s.push("username"),
-      s.join("-")
+      e && n.push("email"),
+      r && n.push("phone"),
+      s && n.push("username"),
+      n.join("-")
     );
   },
   jt = (e, r) => {
-    let n = r?.usernameOrEmailPlaceholder || "Username or Email Address",
-      s = "text",
+    let s = r?.usernameOrEmailPlaceholder || "Username or Email Address",
+      n = "text",
       a = "username";
     if (e) {
-      const o = e.includes("email"),
+      const l = e.includes("email"),
         i = e.includes("phone"),
         d = e.includes("username"),
-        c = yt(o, i, d),
+        c = yt(l, i, d),
         u = {
           email: {
             labelKey: "emailPlaceholder",
@@ -1514,23 +1531,23 @@ const P = (e, r) =>
           },
         }[c];
       u &&
-        ((n = u.labelFallback),
-        u.type && (s = u.type),
+        ((s = u.labelFallback),
+        u.type && (n = u.type),
         u.autoComplete && (a = u.autoComplete));
     }
     return (
-      n.endsWith("*") || (n += "*"),
-      { label: n, type: s, autoComplete: a }
+      s.endsWith("*") || (s += "*"),
+      { label: s, type: n, autoComplete: a }
     );
   };
 function _t() {
   const {
       links: e,
       data: r,
-      handleLoginPassword: n,
-      errors: s,
+      handleLoginPassword: s,
+      errors: n,
       isCaptchaAvailable: a,
-      captchaImage: o,
+      captchaImage: l,
       resetPasswordLink: i,
       isForgotPasswordEnabled: d,
       loginPasswordInstance: c,
@@ -1547,15 +1564,15 @@ function _t() {
     b = m?.captchaCodePlaceholder?.concat("*") || "CAPTCHA*",
     _ = "CAPTCHA challenge",
     j = m?.forgotPasswordText || "Forgot Password?",
-    v = s?.filter((g) => !g.field || g.field === null) || [],
-    k = P("username", s) || P("email", s),
-    x = P("password", s),
-    U = P("captcha", s),
+    v = n?.filter((g) => !g.field || g.field === null) || [],
+    k = P("username", n) || P("email", n),
+    x = P("password", n),
+    U = P("captcha", n),
     Q = c?.transaction?.getAllowedIdentifiers() || [],
     L = c?.transaction?.getPasswordPolicy(),
     { label: X, type: Y } = jt(Q, m),
     Z = async (g) => {
-      await n(g.username, g.password, g.captcha);
+      await s(g.username, g.password, g.captcha);
     },
     $ = i && O(i),
     ee = O(e?.edit_identifier) || "";
@@ -1631,7 +1648,7 @@ function _t() {
             control: u.control,
             name: "captcha",
             label: b,
-            imageUrl: o || "",
+            imageUrl: l || "",
             imageAltText: _,
             className: "mb-4",
             sdkError: U,
@@ -1662,7 +1679,7 @@ function Nt() {
       className: "theme-universal",
       children: t.jsxs(Le, {
         className: "w-full max-w-[400px] gap-0",
-        children: [t.jsx(nt, {}), t.jsx(_t, {}), t.jsx(Xe, {})],
+        children: [t.jsx(st, {}), t.jsx(_t, {}), t.jsx(Xe, {})],
       }),
     })
   );
@@ -1679,9 +1696,9 @@ const kt = Object.freeze(
     return "/" + e;
   },
   B = {},
-  T = function (r, n, s) {
+  T = function (r, s, n) {
     let a = Promise.resolve();
-    if (n && n.length > 0) {
+    if (s && s.length > 0) {
       let c = function (m) {
         return Promise.all(
           m.map((u) =>
@@ -1696,7 +1713,7 @@ const kt = Object.freeze(
       const i = document.querySelector("meta[property=csp-nonce]"),
         d = i?.nonce || i?.getAttribute("nonce");
       a = c(
-        n.map((m) => {
+        s.map((m) => {
           if (((m = St(m)), m in B)) return;
           B[m] = !0;
           const u = m.endsWith(".css"),
@@ -1721,14 +1738,14 @@ const kt = Object.freeze(
         })
       );
     }
-    function o(i) {
+    function l(i) {
       const d = new Event("vite:preloadError", { cancelable: !0 });
       if (((d.payload = i), window.dispatchEvent(d), !d.defaultPrevented))
         throw i;
     }
     return a.then((i) => {
-      for (const d of i || []) d.status === "rejected" && o(d.reason);
-      return r().catch(o);
+      for (const d of i || []) d.status === "rejected" && l(d.reason);
+      return r().catch(l);
     });
   };
 async function Ct() {}
@@ -1743,14 +1760,14 @@ const Et = {
   Lt = () => {
     const [e, r] = h.useState("login-id");
     h.useEffect(() => {
-      const s = Ne();
-      r(s || "login-id");
+      const n = Ne();
+      r(n || "login-id");
     }, []);
-    const n = Ft(e);
+    const s = Ft(e);
     return t.jsx(h.Suspense, {
       fallback: t.jsx("div", { children: "Loading..." }),
-      children: n
-        ? t.jsx(n, {})
+      children: s
+        ? t.jsx(s, {})
         : t.jsxs("div", { children: ['Screen "', e, '" not implemented yet'] }),
     });
   };
@@ -1765,4 +1782,4 @@ async function Tt() {
 }
 Tt();
 export { Ce as L, Nt as a };
-//# sourceMappingURL=index.BO9SIy9N.js.map
+//# sourceMappingURL=index.DX3utxD5.js.map
