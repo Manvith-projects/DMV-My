@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 import type { Error } from "@auth0/auth0-acul-js/types";
@@ -22,7 +23,15 @@ interface LoginFormData {
   captcha?: string;
 }
 
-function LoginForm() {
+interface LoginFormProps {
+  useNativeMarkup?: boolean;
+  disableCaptcha?: boolean;
+}
+
+function LoginForm({
+  useNativeMarkup = false,
+  disableCaptcha = false,
+}: LoginFormProps) {
   const {
     handleLogin,
     errors,
@@ -34,7 +43,6 @@ function LoginForm() {
     allowedIdentifiers,
     passwordPolicy,
   } = useLoginManager();
-
   const form = useForm<LoginFormData>({
     defaultValues: {
       username: "",
@@ -42,6 +50,9 @@ function LoginForm() {
       captcha: "",
     },
   });
+
+  const [showPassword, setShowPassword] = useState(false);
+  const togglePassword = () => setShowPassword((s) => !s);
 
   const {
     formState: { isSubmitting },
@@ -108,14 +119,30 @@ function LoginForm() {
           }}
           render={({ field, fieldState }) => (
             <FormItem>
-              <ULThemeFloatingLabelField
-                {...field}
-                label={usernameLabel}
-                type={usernameType}
-                autoFocus={true}
-                autoComplete={usernameAutoComplete}
-                error={!!fieldState.error || !!usernameSDKError}
-              />
+              {useNativeMarkup ? (
+                <>
+                  <label htmlFor={field.name} className="form-label label-text">
+                    {usernameLabel}
+                  </label>
+                  <input
+                    {...field}
+                    id={field.name}
+                    type={usernameType}
+                    autoComplete={usernameAutoComplete}
+                    className="form-input input-field w-full"
+                    placeholder={usernameLabel}
+                  />
+                </>
+              ) : (
+                <ULThemeFloatingLabelField
+                  {...field}
+                  label={usernameLabel}
+                  type={usernameType}
+                  autoFocus={true}
+                  autoComplete={usernameAutoComplete}
+                  error={!!fieldState.error || !!usernameSDKError}
+                />
+              )}
               <ULThemeFormMessage
                 sdkError={usernameSDKError}
                 hasFormError={!!fieldState.error}
@@ -143,12 +170,40 @@ function LoginForm() {
           }}
           render={({ field, fieldState }) => (
             <FormItem>
-              <ULThemePasswordField
-                {...field}
-                label={passwordLabel}
-                autoComplete="current-password"
-                error={!!fieldState.error || !!passwordSDKError}
-              />
+              {useNativeMarkup ? (
+                <>
+                  <label htmlFor={field.name} className="form-label label-text">
+                    {passwordLabel}
+                  </label>
+                  <div className="password-wrapper relative">
+                    <input
+                      {...field}
+                      id={field.name}
+                      type={showPassword ? "text" : "password"}
+                      autoComplete="current-password"
+                      className="form-input input-field w-full pr-10"
+                      placeholder={passwordLabel}
+                    />
+                    <button
+                      type="button"
+                      onClick={togglePassword}
+                      className="toggle-password absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400"
+                      aria-label={
+                        showPassword ? "Hide password" : "Show password"
+                      }
+                    >
+                      <i className="fa-regular fa-eye" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <ULThemePasswordField
+                  {...field}
+                  label={passwordLabel}
+                  autoComplete="current-password"
+                  error={!!fieldState.error || !!passwordSDKError}
+                />
+              )}
               <ULThemeFormMessage
                 sdkError={passwordSDKError}
                 hasFormError={!!fieldState.error}
@@ -158,7 +213,8 @@ function LoginForm() {
         />
 
         {/* CAPTCHA Box */}
-        {isCaptchaAvailable && (
+        {/* Render CAPTCHA only if the SDK indicates availability and it's not disabled via prop */}
+        {isCaptchaAvailable && !disableCaptcha && (
           <Captcha
             control={form.control}
             name="captcha"
@@ -186,13 +242,23 @@ function LoginForm() {
         </div>
 
         {/* Submit button */}
-        <ULThemePrimaryButton
-          type="submit"
-          className="w-full"
-          disabled={isSubmitting}
-        >
-          {buttonText}
-        </ULThemePrimaryButton>
+        {useNativeMarkup ? (
+          <button
+            type="submit"
+            className="login-button w-full"
+            disabled={isSubmitting}
+          >
+            {buttonText}
+          </button>
+        ) : (
+          <ULThemePrimaryButton
+            type="submit"
+            className="w-full"
+            disabled={isSubmitting}
+          >
+            {buttonText}
+          </ULThemePrimaryButton>
+        )}
       </form>
     </Form>
   );
