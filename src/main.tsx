@@ -8,6 +8,20 @@ import "./index.css";
 import App from "./App.tsx";
 
 async function initializeApp() {
+  // If running in Vite dev, load the mock context and the dev fetch logger
+  if (import.meta.env.DEV) {
+    // load fetch logger before mock context so any requests during context
+    // loading are also logged.
+    try {
+      const mod = await import("./dev/fetch-logger");
+      mod.initFetchLogger();
+    } catch (e) {
+      // ignore dev helper failures
+
+      console.warn("Could not initialize dev fetch logger", e);
+    }
+  }
+
   await loadAndSetMockContext();
 
   /**
