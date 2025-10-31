@@ -6,7 +6,21 @@ export const executeSafely = <R>(
   actionFn: () => R
 ): R | void => {
   // Always attempt the action, but log the intention in development.
-  if (process.env.NODE_ENV === "development") {
+  // Support both Node env and Vite's import.meta.env.DEV so logs appear when
+  // running with the Vite dev server.
+  // NOTE: `import.meta` is available in the browser build under Vite; guard
+  // access so tools that run this file in Node (e.g. Jest) don't break.
+  // Create a small type for Vite's `import.meta.env` to avoid using `any` and
+  // satisfy `@typescript-eslint/no-explicit-any`.
+  type ViteMeta = { env?: { DEV?: boolean } };
+
+  const isDev =
+    (typeof process !== "undefined" &&
+      process.env.NODE_ENV === "development") ||
+    (typeof import.meta !== "undefined" &&
+      (import.meta as unknown as ViteMeta).env?.DEV === true);
+
+  if (isDev) {
     console.log(`[DEV] ${actionDescription}`);
   }
 
