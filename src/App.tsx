@@ -5,11 +5,13 @@ import { getCurrentScreen } from "@auth0/auth0-acul-js";
 import { getScreenComponent } from "@/utils/screen/screenLoader";
 
 const App = () => {
-  const [screen, setScreen] = useState("login-id");
+  // Change the initial value from "login-id" to "login"
+  const [screen, setScreen] = useState("login");
 
   useEffect(() => {
     const current = getCurrentScreen();
-    setScreen(current || "login-id");
+    // Change fallback to "login" as well
+    setScreen(current || "login");
   }, []);
 
   const ScreenComponent = getScreenComponent(screen);
