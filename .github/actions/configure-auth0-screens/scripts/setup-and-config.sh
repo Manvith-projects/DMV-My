@@ -26,6 +26,12 @@ if [ -z "$CDN_BASE_URL" ]; then
   exit 1
 fi
 
+# Basic validation: CDN_BASE_URL must be an absolute URL (include scheme)
+if ! echo "$CDN_BASE_URL" | grep -E -q '^https?://'; then
+  echo "::error::[SETUP] CDN_URL must be an absolute URL including scheme (e.g. https://cdn.example.com). Current value: $CDN_BASE_URL"
+  exit 1
+fi
+
 if [[ "$CDN_BASE_URL" == */ ]]; then
    echo "::warning::[SETUP] CDN_URL ends with a slash. Removing it: $CDN_BASE_URL"
    CDN_BASE_URL=${CDN_BASE_URL%/}

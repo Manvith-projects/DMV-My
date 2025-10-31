@@ -2365,10 +2365,10 @@ const Ga = {
   },
   Ka = (e) => Ga[e] || null,
   $a = () => {
-    const [e, t] = g.useState("login-id");
+    const [e, t] = g.useState("login");
     g.useEffect(() => {
       const r = Oe();
-      t(r || "login-id");
+      t(r || "login");
     }, []);
     const n = Ka(e);
     return a.jsx(g.Suspense, {
@@ -2389,4 +2389,4 @@ async function Da() {
 }
 Da();
 export { Sa as L, Ra as a };
-//# sourceMappingURL=index.WQj7G3xx.js.map
+//# sourceMappingURL=index.BCOOuOhK.js.map
