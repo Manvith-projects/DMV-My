@@ -2,6 +2,7 @@ import { Suspense, useEffect, useState } from "react";
 
 import { getCurrentScreen } from "@auth0/auth0-acul-js";
 
+import DevDebugOverlay from "@/components/DevDebugOverlay";
 import { getScreenComponent } from "@/utils/screen/screenLoader";
 
 const POLL_INTERVAL_MS = 250;
@@ -53,6 +54,7 @@ const App = () => {
       ) : (
         <div>Screen &quot;{screen}&quot; not implemented yet</div>
       )}
+      <DevDebugOverlay />
     </Suspense>
   );
 };
