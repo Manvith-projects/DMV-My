@@ -1,56 +1,56 @@
 import {
-  t as he,
-  c as ge,
-  j as a,
+  t as ge,
+  c as pe,
+  j as t,
   r as g,
-  F as le,
-  a as pe,
-  b as xe,
+  F as se,
+  a as xe,
+  b as be,
   d as U,
-  e as be,
-  C as ve,
-  u as we,
-  f as ye,
-  g as je,
-  T as Ne,
-  h as _e,
-  i as Se,
+  e as ve,
+  C as we,
+  u as ye,
+  f as je,
+  g as Ne,
+  T as _e,
+  h as Se,
+  i as Pe,
   k as Ce,
-  l as Pe,
-  m as Le,
-  n as ke,
-  E as Te,
-  o as Ee,
-  p as Fe,
-  q as Ae,
+  l as Le,
+  m as ke,
+  n as Te,
+  E as Ee,
+  o as Fe,
+  p as Ae,
+  q as Ie,
   s as q,
-  v as Ie,
-  w as Me,
-  x as ze,
-  A as Re,
-  y as Be,
-  z as Oe,
+  v as Me,
+  w as ze,
+  x as Re,
+  A as Be,
+  y as Oe,
+  z as ae,
   B as Ue,
 } from "../shared/vendor.BXyqNJ2J.js";
 function d(...e) {
-  return he(ge(e));
+  return ge(pe(e));
 }
-const J = ({ children: e, className: t, ...n }) => {
-    const r = d("w-full min-h-screen", "justify-page-layout", t);
-    return a.jsxs("div", {
+const J = ({ children: e, className: a, ...n }) => {
+    const r = d("w-full min-h-screen", "justify-page-layout", a);
+    return t.jsxs("div", {
       className: r,
       ...n,
       children: [
-        a.jsx("div", {
+        t.jsx("div", {
           className: "ul-topbar",
-          children: a.jsxs("div", {
+          children: t.jsxs("div", {
             className:
               "container mx-auto py-9 px-6 flex items-center justify-between h-14",
             children: [
-              a.jsxs("div", {
+              t.jsxs("div", {
                 className: "flex items-center",
                 children: [
-                  a.jsx("div", {
+                  t.jsx("div", {
                     className: "ul-logo bg-no-repeat bg-contain",
                     style: {
                       backgroundImage:
@@ -60,7 +60,7 @@ const J = ({ children: e, className: t, ...n }) => {
                     },
                     "aria-hidden": !0,
                   }),
-                  a.jsx("div", {
+                  t.jsx("div", {
                     className: "ul-logo bg-no-repeat bg-contain -ml-20",
                     style: {
                       backgroundImage:
@@ -72,19 +72,19 @@ const J = ({ children: e, className: t, ...n }) => {
                   }),
                 ],
               }),
-              a.jsxs("div", {
+              t.jsxs("div", {
                 className: "flex items-center gap-4",
                 children: [
-                  a.jsx("span", {
+                  t.jsx("span", {
                     className: "bg-white p-1 rounded-full",
                     "aria-hidden": "true",
-                    children: a.jsx("i", {
+                    children: t.jsx("i", {
                       className: "fa-solid fa-globe",
                       style: { color: "#000" },
                       "aria-hidden": "true",
                     }),
                   }),
-                  a.jsx("button", {
+                  t.jsx("button", {
                     className: "translate-btn",
                     children: "Translate",
                   }),
@@ -93,17 +93,17 @@ const J = ({ children: e, className: t, ...n }) => {
             ],
           }),
         }),
-        a.jsx("div", {
+        t.jsx("div", {
           className: "ul-nav",
-          children: a.jsx("div", {
+          children: t.jsx("div", {
             className: "container mx-auto px-6",
-            children: a.jsx("div", {
+            children: t.jsx("div", {
               className: "py-4 text-center font-bold",
               children: "Home",
             }),
           }),
         }),
-        a.jsx("div", {
+        t.jsx("div", {
           className: "ul-hero",
           style: {
             position: "relative",
@@ -115,11 +115,11 @@ const J = ({ children: e, className: t, ...n }) => {
             clipPath: "polygon(0 0, 100% 0, 100% 69%, 0 98%)",
             minHeight: "400px",
           },
-          children: a.jsx("div", {
+          children: t.jsx("div", {
             className: "container mx-auto px-9 relative bg-cover",
-            children: a.jsx("div", {
+            children: t.jsx("div", {
               className: "absolute inset-0 flex items-start justify-start",
-              children: a.jsx("h1", {
+              children: t.jsx("h1", {
                 className: "hero-title m-10",
                 style: { fontFamily: "tt-commons-800-italic, sans-serif" },
                 children: "LOG IN",
@@ -127,10 +127,10 @@ const J = ({ children: e, className: t, ...n }) => {
             }),
           }),
         }),
-        a.jsx("div", {
+        t.jsx("div", {
           className: "ul-content relative w-full",
           style: { marginTop: "-150px", zIndex: 20 },
-          children: a.jsx("div", {
+          children: t.jsx("div", {
             className: "container mx-auto px-6 w-full max-w-7xl",
             children: e,
           }),
@@ -157,17 +157,17 @@ const J = ({ children: e, className: t, ...n }) => {
       defaultVariants: { variant: "default", size: "default" },
     }
   ),
-  se = g.forwardRef(
+  oe = g.forwardRef(
     (
       {
         className: e,
-        variant: t,
+        variant: a,
         size: n,
         error: r,
         helperText: l,
         label: s,
-        startAdornment: o,
-        endAdornment: i,
+        startAdornment: i,
+        endAdornment: o,
         ...u
       },
       c
@@ -185,25 +185,25 @@ const J = ({ children: e, className: t, ...n }) => {
           (w(!!j.target.value), u.onChange?.(j));
         },
         _ = m || h;
-      return a.jsxs("div", {
+      return t.jsxs("div", {
         children: [
-          a.jsxs(le, {
+          t.jsxs(se, {
             className: d(
-              Ve({ variant: r ? "error" : t, size: n }),
+              Ve({ variant: r ? "error" : a, size: n }),
               "group relative items-end gap-0.5",
               p &&
                 "bg-input-muted text-input-foreground cursor-not-allowed opacity-50",
-              p && t === "default" && "bg-input-muted",
-              o && "pl-[5px]",
-              i && "pr-[5px]",
+              p && a === "default" && "bg-input-muted",
+              i && "pl-[5px]",
+              o && "pr-[5px]",
               e
             ),
             children: [
-              a.jsx(pe, {
+              t.jsx(xe, {
                 htmlFor: u.id,
                 className: d(
                   "pointer-events-none absolute top-1/2 left-4 z-[10] -translate-y-1/2 text-sm transition-all duration-150 ease-in-out origin-left",
-                  o && "left-0",
+                  i && "left-0",
                   _ &&
                     "scale-80 -translate-y-[1.18rem] top-2 z-10 bg-input px-1",
                   r ? "text-destructive-foreground" : "text-muted-foreground",
@@ -211,15 +211,15 @@ const J = ({ children: e, className: t, ...n }) => {
                 ),
                 children: s,
               }),
-              o &&
-                a.jsx("div", {
+              i &&
+                t.jsx("div", {
                   className:
                     "flex h-full items-center justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
-                  children: o,
+                  children: i,
                 }),
-              a.jsx("div", {
+              t.jsx("div", {
                 className: "relative flex-1",
-                children: a.jsx(xe, {
+                children: t.jsx(be, {
                   id: u.id,
                   className: d(
                     "h-14 w-full flex-1 rounded-2xl bg-transparent px-3 py-4 outline-none file:border-0 file:bg-transparent file:text-sm file:font-medium",
@@ -228,8 +228,8 @@ const J = ({ children: e, className: t, ...n }) => {
                     "autofill:[transition:background-color_9999s_ease-in-out_0s]",
                     p &&
                       "bg-input-muted text-input-foreground cursor-not-allowed opacity-50",
-                    o ? "rounded-l-none pl-0" : "pl-3",
-                    i ? "rounded-r-none pr-0" : "pr-3",
+                    i ? "rounded-l-none pl-0" : "pl-3",
+                    o ? "rounded-r-none pr-0" : "pr-3",
                     n === "sm" && "h-12 py-3 text-sm",
                     n === "lg" && "h-16 py-5 text-base"
                   ),
@@ -240,16 +240,16 @@ const J = ({ children: e, className: t, ...n }) => {
                   onChange: b,
                 }),
               }),
-              i &&
-                a.jsx("div", {
+              o &&
+                t.jsx("div", {
                   className:
                     "flex h-full items-center justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
-                  children: i,
+                  children: o,
                 }),
             ],
           }),
           l &&
-            a.jsx("p", {
+            t.jsx("p", {
               className: d(
                 "mt-1.5 text-xs",
                 r ? "text-destructive-foreground" : "text-muted-foreground"
@@ -260,22 +260,22 @@ const J = ({ children: e, className: t, ...n }) => {
       });
     }
   );
-se.displayName = "FloatingLabelField";
-const Z = be,
-  oe = g.createContext({}),
+oe.displayName = "FloatingLabelField";
+const Z = ve,
+  ie = g.createContext({}),
   A = ({ ...e }) =>
-    a.jsx(oe.Provider, {
+    t.jsx(ie.Provider, {
       value: { name: e.name },
-      children: a.jsx(ve, { ...e }),
+      children: t.jsx(we, { ...e }),
     }),
-  ie = () => {
-    const e = g.useContext(oe),
-      t = g.useContext(de),
-      { getFieldState: n } = we(),
-      r = ye({ name: e.name }),
+  de = () => {
+    const e = g.useContext(ie),
+      a = g.useContext(ue),
+      { getFieldState: n } = ye(),
+      r = je({ name: e.name }),
       l = n(e.name, r);
     if (!e) throw new Error("useFormField should be used within <FormField>");
-    const { id: s } = t;
+    const { id: s } = a;
     return {
       id: s,
       name: e.name,
@@ -285,27 +285,27 @@ const Z = be,
       ...l,
     };
   },
-  de = g.createContext({});
-function I({ className: e, ...t }) {
+  ue = g.createContext({});
+function I({ className: e, ...a }) {
   const n = g.useId();
-  return a.jsx(de.Provider, {
+  return t.jsx(ue.Provider, {
     value: { id: n },
-    children: a.jsx(le, {
+    children: t.jsx(se, {
       "data-slot": "form-item",
       className: d("grid", e),
-      ...t,
+      ...a,
     }),
   });
 }
-function Ge({ className: e, ...t }) {
-  const { error: n, formMessageId: r } = ie(),
-    l = n ? String(n?.message ?? "") : t.children;
+function Ge({ className: e, ...a }) {
+  const { error: n, formMessageId: r } = de(),
+    l = n ? String(n?.message ?? "") : a.children;
   return l
-    ? a.jsx("p", {
+    ? t.jsx("p", {
         "data-slot": "form-message",
         id: r,
         className: d("text-destructive text-sm", e),
-        ...t,
+        ...a,
         children: l,
       })
     : null;
@@ -353,21 +353,21 @@ const Ke = U(
 );
 function M({
   className: e,
-  variant: t = "default",
+  variant: a = "default",
   size: n = "default",
   wrapperClassName: r,
   error: l,
   ...s
 }) {
-  const { formItemId: o } = ie(),
-    i = l ? "error" : t,
+  const { formItemId: i } = de(),
+    o = l ? "error" : a,
     u = Ke({ themeState: l ? "error" : "default" });
-  return a.jsx("div", {
+  return t.jsx("div", {
     className: d("w-full", r),
-    children: a.jsx(se, {
-      id: o,
+    children: t.jsx(oe, {
+      id: i,
       className: d(e, u),
-      variant: i,
+      variant: o,
       size: n,
       error: l,
       ...s,
@@ -375,10 +375,10 @@ function M({
   });
 }
 M.displayName = "ULThemeFloatingLabelField";
-const E = ({ sdkError: e, hasFormError: t, showIcon: n = !0, className: r }) =>
-  !e && !t
+const E = ({ sdkError: e, hasFormError: a, showIcon: n = !0, className: r }) =>
+  !e && !a
     ? null
-    : a.jsxs("div", {
+    : t.jsxs("div", {
         className: d(
           "flex mb-2 items-center text-sm font-medium theme-universal:text-error",
           r
@@ -386,28 +386,28 @@ const E = ({ sdkError: e, hasFormError: t, showIcon: n = !0, className: r }) =>
         role: "alert",
         "aria-live": "polite",
         children: [
-          n && a.jsx(je, { className: "h-4 w-4 mr-1 flex-shrink-0" }),
+          n && t.jsx(Ne, { className: "h-4 w-4 mr-1 flex-shrink-0" }),
           e
-            ? a.jsx("p", {
+            ? t.jsx("p", {
                 className:
                   "text-destructive text-sm theme-universal:text-error",
                 children: e,
               })
-            : a.jsx(Ge, { className: "theme-universal:text-error" }),
+            : t.jsx(Ge, { className: "theme-universal:text-error" }),
         ],
       });
 E.displayName = "ULThemeFormMessage";
-const ue = ({
+const me = ({
     name: e,
-    control: t,
+    control: a,
     rules: n,
     label: r,
     imageUrl: l,
     imageAltText: s,
-    sdkError: o,
-    className: i,
+    sdkError: i,
+    className: o,
   }) => {
-    const u = d("space-y-2", i),
+    const u = d("space-y-2", o),
       c = d(
         "flex justify-center p-8 rounded",
         "theme-universal:bg-input-bg",
@@ -416,34 +416,34 @@ const ue = ({
         "theme-universal:rounded-input"
       );
     return l
-      ? a.jsxs("div", {
+      ? t.jsxs("div", {
           className: u,
           children: [
-            a.jsx("div", {
+            t.jsx("div", {
               className: c,
-              children: a.jsx("img", {
+              children: t.jsx("img", {
                 src: l,
                 alt: s,
                 className: "object-contain",
               }),
             }),
-            a.jsx(A, {
-              control: t,
+            t.jsx(A, {
+              control: a,
               name: e,
               rules: n,
               render: ({ field: m, fieldState: f }) =>
-                a.jsxs(I, {
+                t.jsxs(I, {
                   children: [
-                    a.jsx(M, {
+                    t.jsx(M, {
                       ...m,
                       label: r,
                       type: "text",
                       autoComplete: "off",
-                      error: !!f.error || !!o,
+                      error: !!f.error || !!i,
                     }),
-                    a.jsx(E, {
+                    t.jsx(E, {
                       className: "mt-1",
-                      sdkError: o,
+                      sdkError: i,
                       hasFormError: !!f.error,
                     }),
                   ],
@@ -469,25 +469,25 @@ const ue = ({
       defaultVariants: { variant: "default" },
     }
   );
-function De({ className: e, variant: t, ...n }) {
-  return a.jsx("div", {
+function De({ className: e, variant: a, ...n }) {
+  return t.jsx("div", {
     "data-slot": "alert",
     role: "alert",
-    className: d($e({ variant: t }), e),
+    className: d($e({ variant: a }), e),
     ...n,
   });
 }
-function He({ className: e, ...t }) {
-  return a.jsx("div", {
+function He({ className: e, ...a }) {
+  return t.jsx("div", {
     "data-slot": "alert-title",
     className: d(
       "col-start-2 line-clamp-1 flex h-auto min-h-4 leading-4.5 font-medium tracking-tight",
       e
     ),
-    ...t,
+    ...a,
   });
 }
-function Y({ variant: e = "destructive", className: t, ...n }) {
+function Y({ variant: e = "destructive", className: a, ...n }) {
   const r = {
       destructive: d(
         "p-4",
@@ -499,15 +499,15 @@ function Y({ variant: e = "destructive", className: t, ...n }) {
       ),
     },
     l = d(e && r[e]);
-  return a.jsx(De, { variant: e, className: d(t, l), ...n });
+  return t.jsx(De, { variant: e, className: d(a, l), ...n });
 }
-function Q({ className: e, ...t }) {
+function Q({ className: e, ...a }) {
   const n = d(
     "theme-universal:text-(--ul-theme-color-primary-button-label)",
     "theme-universal:font-body",
     "theme-universal:text-(length:--ul-theme-font-body-text-size)"
   );
-  return a.jsx(He, { className: d(e, n), ...t });
+  return t.jsx(He, { className: d(e, n), ...a });
 }
 const We = U(
   "focus-within:ring-ring inline-flex items-center gap-2 rounded-md py-0.5 underline-offset-4 transition-colors focus:ring-3 focus-visible:outline-hidden",
@@ -529,17 +529,17 @@ const We = U(
 );
 function qe({
   className: e,
-  children: t,
+  children: a,
   variant: n,
   underline: r,
   ref: l,
   ...s
 }) {
-  return a.jsx("a", {
+  return t.jsx("a", {
     ref: l,
     className: d(We({ variant: n, underline: r }), e),
     ...s,
-    children: t,
+    children: a,
   });
 }
 const W = (e) =>
@@ -547,44 +547,44 @@ const W = (e) =>
       .getPropertyValue(e)
       .trim()
       .replace(/^"(.*)"$/, "$1"),
-  B = ({ children: e, className: t, disabled: n = !1, ref: r, ...l }) => {
+  B = ({ children: e, className: a, disabled: n = !1, ref: r, ...l }) => {
     const s =
         "text-link-focus text-(length:--ul-theme-font-links-size) font-(weight:--ul-theme-font-links-weight) focus:rounded-(--ul-theme-border-links-border-radius) hover:text-link-focus/80",
-      o = n ? "pointer-events-none text-muted cursor-not-allowed" : "",
-      i =
+      i = n ? "pointer-events-none text-muted cursor-not-allowed" : "",
+      o =
         "theme-universal:focus:outline-none theme-universal:focus:ring-4 theme-universal:focus:ring-base-focus/15 theme-universal:focus:bg-base-focus/15",
       u = W("--ul-theme-font-links-style") === "normal" ? "none" : "always";
-    return a.jsx(qe, {
+    return t.jsx(qe, {
       ref: r,
-      className: d(s, o, i, t),
+      className: d(s, i, o, a),
       underline: u,
       "aria-disabled": n,
       ...l,
       children: e,
     });
   };
-function Je({ delay: e = 0, ...t }) {
-  return a.jsx(ke, { "data-slot": "tooltip-provider", delay: e, ...t });
+function Je({ delay: e = 0, ...a }) {
+  return t.jsx(Te, { "data-slot": "tooltip-provider", delay: e, ...a });
 }
 function Ze({ ...e }) {
-  return a.jsx(Je, { children: a.jsx(Ne, { "data-slot": "tooltip", ...e }) });
+  return t.jsx(Je, { children: t.jsx(_e, { "data-slot": "tooltip", ...e }) });
 }
 function Ye({ ...e }) {
-  return a.jsx(_e, { "data-slot": "tooltip-trigger", ...e });
+  return t.jsx(Se, { "data-slot": "tooltip-trigger", ...e });
 }
 function Qe({
   className: e,
-  arrow: t,
+  arrow: a,
   side: n,
   sideOffset: r = 8,
   children: l,
   ...s
 }) {
-  return a.jsx(Se, {
-    children: a.jsx(Ce, {
+  return t.jsx(Pe, {
+    children: t.jsx(Ce, {
       side: n,
       sideOffset: r,
-      children: a.jsxs(Pe, {
+      children: t.jsxs(Le, {
         "data-slot": "tooltip-content",
         className: d(
           "bg-popover text-popover-foreground data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 shadow-bevel-lg z-50 w-fit origin-(--radix-tooltip-content-transform-origin) rounded-xl px-2 py-1 text-sm text-balance",
@@ -593,8 +593,8 @@ function Qe({
         ...s,
         children: [
           l,
-          t
-            ? a.jsx(Le, {
+          a
+            ? t.jsx(ke, {
                 className:
                   "bg-primary fill-primary z-50 size-2.5 translate-y-[calc(-50%_-_2px)] rotate-45 rounded-[2px]",
               })
@@ -604,15 +604,15 @@ function Qe({
     }),
   });
 }
-const X = ({ onVisibilityToggle: e, buttonClassName: t, ...n }) => {
+const X = ({ onVisibilityToggle: e, buttonClassName: a, ...n }) => {
   const [r, l] = g.useState(!1),
     s = () => {
-      const i = !r;
-      (l(i), e?.(i));
+      const o = !r;
+      (l(o), e?.(o));
     },
-    o = a.jsxs(Ze, {
+    i = t.jsxs(Ze, {
       children: [
-        a.jsx(Ye, {
+        t.jsx(Ye, {
           type: "button",
           onClick: s,
           className: d(
@@ -624,19 +624,19 @@ const X = ({ onVisibilityToggle: e, buttonClassName: t, ...n }) => {
             "theme-universal:focus:bg-base-focus/15 theme-universal:focus-visible:ring-0 theme-universal:focus-visible:ring-offset-0",
             "flex items-center justify-center",
             "bg-transparent border-none outline-none",
-            t
+            a
           ),
           "aria-label": r ? "Hide password" : "Show password",
-          children: r ? a.jsx(Te, {}) : a.jsx(Ee, {}),
+          children: r ? t.jsx(Ee, {}) : t.jsx(Fe, {}),
         }),
-        a.jsx(Qe, {
+        t.jsx(Qe, {
           sideOffset: 0,
           className: "bg-black text-white -mb-2 ml-0.5",
           children: r ? "Hide password" : "Show password",
         }),
       ],
     });
-  return a.jsx(M, { ...n, type: r ? "text" : "password", endAdornment: o });
+  return t.jsx(M, { ...n, type: r ? "text" : "password", endAdornment: i });
 };
 X.displayName = "ULThemePasswordField";
 const Xe = U(
@@ -664,19 +664,19 @@ const Xe = U(
     defaultVariants: { variant: "primary", size: "default" },
   }
 );
-function ea({
+function et({
   className: e,
-  variant: t,
+  variant: a,
   size: n,
-  render: r = a.jsx("button", {}),
+  render: r = t.jsx("button", {}),
   ...l
 }) {
-  const s = { className: d(Xe({ variant: t, size: n }), e) };
-  return Fe({ render: r, props: { ...s, ...l } });
+  const s = { className: d(Xe({ variant: a, size: n }), e) };
+  return Ae({ render: r, props: { ...s, ...l } });
 }
 function ee({
   variant: e = "primary",
-  size: t = "default",
+  size: a = "default",
   className: n,
   ...r
 }) {
@@ -721,69 +721,69 @@ function ee({
       ),
       icon: d("theme-universal:rounded-button"),
     },
-    o = d(e && l[e], t && s[t]);
-  return a.jsx(ea, { variant: e, size: t, className: d(n, o), ...r });
+    i = d(e && l[e], a && s[a]);
+  return t.jsx(et, { variant: e, size: a, className: d(n, i), ...r });
 }
-const C = (e, t) =>
-    Array.isArray(t) ? t.find((r) => r.field === e)?.message : void 0,
-  aa = (e, t, n) => {
+const P = (e, a) =>
+    Array.isArray(a) ? a.find((r) => r.field === e)?.message : void 0,
+  tt = (e, a, n) => {
     const r = [];
     return (
       e && r.push("email"),
-      t && r.push("phone"),
+      a && r.push("phone"),
       n && r.push("username"),
       r.join("-")
     );
   },
-  ae = (e, t) => {
-    let n = t?.usernameOrEmailPlaceholder || "Username or Email Address",
+  te = (e, a) => {
+    let n = a?.usernameOrEmailPlaceholder || "Username or Email Address",
       r = "text",
       l = "username";
     if (e) {
       const s = e.includes("email"),
-        o = e.includes("phone"),
-        i = e.includes("username"),
-        u = aa(s, o, i),
+        i = e.includes("phone"),
+        o = e.includes("username"),
+        u = tt(s, i, o),
         m = {
           email: {
             labelKey: "emailPlaceholder",
-            labelFallback: t?.emailPlaceholder || "Email Address",
+            labelFallback: a?.emailPlaceholder || "Email Address",
             type: "email",
             autoComplete: "email",
           },
           phone: {
             labelKey: "phonePlaceholder",
-            labelFallback: t?.phonePlaceholder || "Phone Number",
+            labelFallback: a?.phonePlaceholder || "Phone Number",
             type: "tel",
             autoComplete: "tel",
           },
           username: {
             labelKey: "usernameOnlyPlaceholder",
-            labelFallback: t?.usernameOnlyPlaceholder || "Username",
+            labelFallback: a?.usernameOnlyPlaceholder || "Username",
             autoComplete: "username",
           },
           "email-phone": {
             labelKey: "phoneOrEmailPlaceholder",
             labelFallback:
-              t?.phoneOrEmailPlaceholder || "Phone Number or Email Address",
+              a?.phoneOrEmailPlaceholder || "Phone Number or Email Address",
             autoComplete: "username",
           },
           "email-username": {
             labelKey: "usernameOrEmailPlaceholder",
             labelFallback:
-              t?.usernameOrEmailPlaceholder || "Username or Email Address",
+              a?.usernameOrEmailPlaceholder || "Username or Email Address",
             autoComplete: "username",
           },
           "phone-username": {
             labelKey: "phoneOrUsernamePlaceholder",
             labelFallback:
-              t?.phoneOrUsernamePlaceholder || "Phone Number or Username",
+              a?.phoneOrUsernamePlaceholder || "Phone Number or Username",
             autoComplete: "username",
           },
           "email-phone-username": {
             labelKey: "phoneOrUsernameOrEmailPlaceholder",
             labelFallback:
-              t?.phoneOrUsernameOrEmailPlaceholder ||
+              a?.phoneOrUsernameOrEmailPlaceholder ||
               "Phone, Username, or Email",
             autoComplete: "username",
           },
@@ -800,18 +800,18 @@ const C = (e, t) =>
   },
   O = (e) => {
     if (typeof window > "u" || !e) return e;
-    const t = window.location.origin;
+    const a = window.location.origin;
     try {
       if (e.startsWith("http://") || e.startsWith("https://")) {
         const r = new URL(e);
-        return t + r.pathname + r.search + r.hash;
+        return a + r.pathname + r.search + r.hash;
       }
       if (e.startsWith("/")) {
-        const r = new URL(e, t);
-        return t + r.pathname + r.search + r.hash;
+        const r = new URL(e, a);
+        return a + r.pathname + r.search + r.hash;
       }
       const n = new URL(e, window.location.href);
-      return t + n.pathname + n.search + n.hash;
+      return a + n.pathname + n.search + n.hash;
     } catch (n) {
       return (
         console.error("Failed to rebase URL:", n, { originalLink: e }),
@@ -819,9 +819,9 @@ const C = (e, t) =>
       );
     }
   },
-  T = (e, t) => {
+  T = (e, a) => {
     try {
-      const n = t();
+      const n = a();
       return (
         n &&
           typeof n.then == "function" &&
@@ -835,11 +835,11 @@ const C = (e, t) =>
       return;
     }
   },
-  ta = () => {
-    const e = g.useMemo(() => new Ae(), []),
-      { transaction: t, screen: n } = e,
-      { isSignupEnabled: r, isForgotPasswordEnabled: l, passwordPolicy: s } = t,
-      { signupLink: o, resetPasswordLink: i, texts: u, captchaImage: c } = n;
+  at = () => {
+    const e = g.useMemo(() => new Ie(), []),
+      { transaction: a, screen: n } = e,
+      { isSignupEnabled: r, isForgotPasswordEnabled: l, passwordPolicy: s } = a,
+      { signupLink: i, resetPasswordLink: o, texts: u, captchaImage: c } = n;
     return {
       loginInstance: e,
       handleLogin: async (h, w, p) => {
@@ -858,24 +858,24 @@ const C = (e, t) =>
       isCaptchaAvailable: n.isCaptchaAvailable === !0,
       errors: e.getErrors(),
       captchaImage: c,
-      signupLink: o,
-      resetPasswordLink: i,
-      allowedIdentifiers: t.allowedIdentifiers || [],
+      signupLink: i,
+      resetPasswordLink: o,
+      allowedIdentifiers: a.allowedIdentifiers || [],
       passwordPolicy: s,
     };
   };
-function na({ useNativeMarkup: e = !1, disableCaptcha: t = !1 }) {
+function nt({ useNativeMarkup: e = !1, disableCaptcha: a = !1 }) {
   const {
       handleLogin: n,
       errors: r,
       isCaptchaAvailable: l,
       captchaImage: s,
-      resetPasswordLink: o,
-      isForgotPasswordEnabled: i,
+      resetPasswordLink: i,
+      isForgotPasswordEnabled: o,
       texts: u,
       allowedIdentifiers: c,
       passwordPolicy: m,
-    } = ta(),
+    } = at(),
     f = q({ defaultValues: { username: "", password: "", captcha: "" } }),
     [h, w] = g.useState(!1),
     p = () => w((x) => !x),
@@ -886,37 +886,37 @@ function na({ useNativeMarkup: e = !1, disableCaptcha: t = !1 }) {
     b = u?.captchaCodePlaceholder?.concat("*") || "CAPTCHA*",
     _ = "CAPTCHA challenge",
     j = u?.forgotPasswordText || "Forgot Password?",
-    { label: N, type: L, autoComplete: F } = ae(c, u),
+    { label: N, type: L, autoComplete: F } = te(c, u),
     z = u?.passwordPlaceholder?.concat("*") || "Password*",
     V = r?.filter((x) => !x.field || x.field === null) || [],
-    G = C("username", r) || C("email", r),
-    R = C("password", r),
-    D = C("captcha", r),
+    G = P("username", r) || P("email", r),
+    R = P("password", r),
+    D = P("captcha", r),
     S = async (x) => {
       await n(x.username, x.password, x.captcha);
     },
-    P = o && O(o);
-  return a.jsx(Z, {
+    C = i && O(i);
+  return t.jsx(Z, {
     ...f,
-    children: a.jsxs("form", {
+    children: t.jsxs("form", {
       onSubmit: f.handleSubmit(S),
       className: "space-y-2",
       children: [
         V.length > 0 &&
-          a.jsx("div", {
+          t.jsx("div", {
             className: "space-y-3 mb-4",
             children: V.map((x, k) =>
-              a.jsx(
+              t.jsx(
                 Y,
                 {
                   variant: "destructive",
-                  children: a.jsx(Q, { children: x.message }),
+                  children: t.jsx(Q, { children: x.message }),
                 },
                 k
               )
             ),
           }),
-        a.jsx(A, {
+        t.jsx(A, {
           control: f.control,
           name: "username",
           rules: {
@@ -927,17 +927,17 @@ function na({ useNativeMarkup: e = !1, disableCaptcha: t = !1 }) {
             },
           },
           render: ({ field: x, fieldState: k }) =>
-            a.jsxs(I, {
+            t.jsxs(I, {
               children: [
                 e
-                  ? a.jsxs(a.Fragment, {
+                  ? t.jsxs(t.Fragment, {
                       children: [
-                        a.jsx("label", {
+                        t.jsx("label", {
                           htmlFor: x.name,
                           className: "form-label label-text",
                           children: N,
                         }),
-                        a.jsx("input", {
+                        t.jsx("input", {
                           ...x,
                           id: x.name,
                           type: L,
@@ -947,7 +947,7 @@ function na({ useNativeMarkup: e = !1, disableCaptcha: t = !1 }) {
                         }),
                       ],
                     })
-                  : a.jsx(M, {
+                  : t.jsx(M, {
                       ...x,
                       label: N,
                       type: L,
@@ -955,11 +955,11 @@ function na({ useNativeMarkup: e = !1, disableCaptcha: t = !1 }) {
                       autoComplete: F,
                       error: !!k.error || !!G,
                     }),
-                a.jsx(E, { sdkError: G, hasFormError: !!k.error }),
+                t.jsx(E, { sdkError: G, hasFormError: !!k.error }),
               ],
             }),
         }),
-        a.jsx(A, {
+        t.jsx(A, {
           control: f.control,
           name: "password",
           rules: {
@@ -976,20 +976,20 @@ function na({ useNativeMarkup: e = !1, disableCaptcha: t = !1 }) {
               : void 0,
           },
           render: ({ field: x, fieldState: k }) =>
-            a.jsxs(I, {
+            t.jsxs(I, {
               children: [
                 e
-                  ? a.jsxs(a.Fragment, {
+                  ? t.jsxs(t.Fragment, {
                       children: [
-                        a.jsx("label", {
+                        t.jsx("label", {
                           htmlFor: x.name,
                           className: "form-label label-text",
                           children: z,
                         }),
-                        a.jsxs("div", {
+                        t.jsxs("div", {
                           className: "password-wrapper relative",
                           children: [
-                            a.jsx("input", {
+                            t.jsx("input", {
                               ...x,
                               id: x.name,
                               type: h ? "text" : "password",
@@ -997,7 +997,7 @@ function na({ useNativeMarkup: e = !1, disableCaptcha: t = !1 }) {
                               className: "form-input input-field w-full pr-10",
                               placeholder: z,
                             }),
-                            a.jsx("button", {
+                            t.jsx("button", {
                               type: "button",
                               onClick: p,
                               className:
@@ -1005,7 +1005,7 @@ function na({ useNativeMarkup: e = !1, disableCaptcha: t = !1 }) {
                               "aria-label": h
                                 ? "Hide password"
                                 : "Show password",
-                              children: a.jsx("i", {
+                              children: t.jsx("i", {
                                 className: "fa-regular fa-eye",
                                 "aria-hidden": "true",
                               }),
@@ -1014,19 +1014,19 @@ function na({ useNativeMarkup: e = !1, disableCaptcha: t = !1 }) {
                         }),
                       ],
                     })
-                  : a.jsx(X, {
+                  : t.jsx(X, {
                       ...x,
                       label: z,
                       autoComplete: "current-password",
                       error: !!k.error || !!R,
                     }),
-                a.jsx(E, { sdkError: R, hasFormError: !!k.error }),
+                t.jsx(E, { sdkError: R, hasFormError: !!k.error }),
               ],
             }),
         }),
         l &&
-          !t &&
-          a.jsx(ue, {
+          !a &&
+          t.jsx(me, {
             control: f.control,
             name: "captcha",
             label: b,
@@ -1038,18 +1038,18 @@ function na({ useNativeMarkup: e = !1, disableCaptcha: t = !1 }) {
               maxLength: { value: 15, message: "CAPTCHA too long" },
             },
           }),
-        a.jsx("div", {
+        t.jsx("div", {
           className: "text-left",
-          children: i && P && a.jsx(B, { href: P, children: j }),
+          children: o && C && t.jsx(B, { href: C, children: j }),
         }),
         e
-          ? a.jsx("button", {
+          ? t.jsx("button", {
               type: "submit",
               className: "login-button w-full",
               disabled: v,
               children: y,
             })
-          : a.jsx(ee, {
+          : t.jsx(ee, {
               type: "submit",
               className: "w-full",
               disabled: v,
@@ -1059,54 +1059,54 @@ function na({ useNativeMarkup: e = !1, disableCaptcha: t = !1 }) {
     }),
   });
 }
-function ra() {
+function rt() {
   return (
     g.useEffect(() => {
       document.title = "Login";
     }, []),
-    a.jsx(J, {
+    t.jsx(J, {
       className: "theme-universal",
-      children: a.jsxs("div", {
+      children: t.jsxs("div", {
         className: "login-page min-h-screen flex flex-col z-30",
         children: [
-          a.jsx("main", {
+          t.jsx("main", {
             className: "container mx-auto px-6 -mt-16 mb-16 z-30 max-w-7xl",
-            children: a.jsx("div", {
+            children: t.jsx("div", {
               className: "max-w-7xl mx-auto",
-              children: a.jsx("div", {
+              children: t.jsx("div", {
                 className: "login-card bg-white rounded overflow-hidden w-full",
-                children: a.jsxs("div", {
+                children: t.jsxs("div", {
                   className: "p-6",
                   children: [
-                    a.jsx("h2", {
+                    t.jsx("h2", {
                       className: "welcome-title",
                       children: "Welcome Back",
                     }),
-                    a.jsx("hr", { className: "divider mb-4" }),
-                    a.jsxs("div", {
+                    t.jsx("hr", { className: "divider mb-4" }),
+                    t.jsxs("div", {
                       className: "login-container",
                       children: [
-                        a.jsxs("div", {
+                        t.jsxs("div", {
                           className: "wallet-login mb-4 flex items-start gap-3",
                           children: [
-                            a.jsx("div", {
+                            t.jsx("div", {
                               className:
                                 "wallet-icon h-10 w-10 rounded overflow-hidden bg-white flex items-center justify-center",
-                              children: a.jsx("img", {
+                              children: t.jsx("img", {
                                 src: "https://cdn.dmv.ca.gov/dmv-cdn/prod/isam/images/mdl/ca-dmv-wallet-icon.png",
                                 alt: "CA DMV Wallet",
                                 className: "h-full w-full object-contain",
                               }),
                             }),
-                            a.jsxs("div", {
+                            t.jsxs("div", {
                               children: [
-                                a.jsx("a", {
+                                t.jsx("a", {
                                   href: "#",
                                   className:
                                     "wallet-link text-link font-medium links",
                                   children: "Log in with CA DMV Wallet App",
                                 }),
-                                a.jsx("div", {
+                                t.jsx("div", {
                                   className:
                                     "wallet-subtitle text-xs text-muted",
                                   children: "No password needed",
@@ -1115,17 +1115,17 @@ function ra() {
                             }),
                           ],
                         }),
-                        a.jsx("div", {
+                        t.jsx("div", {
                           className: "section-title mb-3",
                           children: "MyDMV",
                         }),
-                        a.jsxs("p", {
+                        t.jsxs("p", {
                           className: "register-text mb-4 small-note",
                           children: [
-                            a.jsx("strong", { children: "Not Registered?" }),
+                            t.jsx("strong", { children: "Not Registered?" }),
                             " In order to log in, you will first need to",
                             " ",
-                            a.jsx("a", {
+                            t.jsx("a", {
                               href: "#",
                               className: "text-link underline links",
                               children: "create an account",
@@ -1133,7 +1133,7 @@ function ra() {
                             ".",
                           ],
                         }),
-                        a.jsx(na, { useNativeMarkup: !0, disableCaptcha: !0 }),
+                        t.jsx(nt, { useNativeMarkup: !0, disableCaptcha: !0 }),
                       ],
                     }),
                   ],
@@ -1141,58 +1141,58 @@ function ra() {
               }),
             }),
           }),
-          a.jsx("footer", { className: "mt-auto" }),
+          t.jsx("footer", { className: "mt-auto" }),
         ],
       }),
     })
   );
 }
-const la = Object.freeze(
-  Object.defineProperty({ __proto__: null, default: ra }, Symbol.toStringTag, {
+const lt = Object.freeze(
+  Object.defineProperty({ __proto__: null, default: rt }, Symbol.toStringTag, {
     value: "Module",
   })
 );
-function sa(e) {
-  const t = {};
+function st(e) {
+  const a = {};
   return (
     e.primary_button &&
-      (t["--ul-theme-color-primary-button"] = e.primary_button),
+      (a["--ul-theme-color-primary-button"] = e.primary_button),
     e.primary_button_label &&
-      (t["--ul-theme-color-primary-button-label"] = e.primary_button_label),
+      (a["--ul-theme-color-primary-button-label"] = e.primary_button_label),
     e.secondary_button_border &&
-      (t["--ul-theme-color-secondary-button-border"] =
+      (a["--ul-theme-color-secondary-button-border"] =
         e.secondary_button_border),
     e.secondary_button_label &&
-      (t["--ul-theme-color-secondary-button-label"] = e.secondary_button_label),
+      (a["--ul-theme-color-secondary-button-label"] = e.secondary_button_label),
     e.base_focus_color &&
-      (t["--ul-theme-color-base-focus-color"] = e.base_focus_color),
+      (a["--ul-theme-color-base-focus-color"] = e.base_focus_color),
     e.base_hover_color &&
-      (t["--ul-theme-color-base-hover-color"] = e.base_hover_color),
+      (a["--ul-theme-color-base-hover-color"] = e.base_hover_color),
     e.links_focused_components &&
-      (t["--ul-theme-color-links-focused-components"] =
+      (a["--ul-theme-color-links-focused-components"] =
         e.links_focused_components),
-    e.header && (t["--ul-theme-color-header"] = e.header),
-    e.body_text && (t["--ul-theme-color-body-text"] = e.body_text),
+    e.header && (a["--ul-theme-color-header"] = e.header),
+    e.body_text && (a["--ul-theme-color-body-text"] = e.body_text),
     e.widget_background &&
-      (t["--ul-theme-color-widget-background"] = e.widget_background),
-    e.widget_border && (t["--ul-theme-color-widget-border"] = e.widget_border),
+      (a["--ul-theme-color-widget-background"] = e.widget_background),
+    e.widget_border && (a["--ul-theme-color-widget-border"] = e.widget_border),
     e.input_labels_placeholders &&
-      (t["--ul-theme-color-input-labels-placeholders"] =
+      (a["--ul-theme-color-input-labels-placeholders"] =
         e.input_labels_placeholders),
     e.input_filled_text &&
-      (t["--ul-theme-color-input-filled-text"] = e.input_filled_text),
-    e.input_border && (t["--ul-theme-color-input-border"] = e.input_border),
+      (a["--ul-theme-color-input-filled-text"] = e.input_filled_text),
+    e.input_border && (a["--ul-theme-color-input-border"] = e.input_border),
     e.input_background &&
-      (t["--ul-theme-color-input-background"] = e.input_background),
-    e.icons && (t["--ul-theme-color-icons"] = e.icons),
-    e.error && (t["--ul-theme-color-error"] = e.error),
-    e.success && (t["--ul-theme-color-success"] = e.success),
+      (a["--ul-theme-color-input-background"] = e.input_background),
+    e.icons && (a["--ul-theme-color-icons"] = e.icons),
+    e.error && (a["--ul-theme-color-error"] = e.error),
+    e.success && (a["--ul-theme-color-success"] = e.success),
     e.captcha_widget_theme &&
-      (t["--ul-theme-color-captcha-widget-theme"] = e.captcha_widget_theme),
-    t
+      (a["--ul-theme-color-captcha-widget-theme"] = e.captcha_widget_theme),
+    a
   );
 }
-function te(e, t, n = 10) {
+function ne(e, a, n = 10) {
   switch (e) {
     case "pill":
       return 9999;
@@ -1200,58 +1200,58 @@ function te(e, t, n = 10) {
       return 0;
     case "rounded":
     default:
-      return t || n;
+      return a || n;
   }
 }
-function oa(e) {
-  const t = {},
+function ot(e) {
+  const a = {},
     n = e.buttons_style
-      ? te(e.buttons_style, e.button_border_radius)
+      ? ne(e.buttons_style, e.button_border_radius)
       : e.button_border_radius,
     r = e.inputs_style
-      ? te(e.inputs_style, e.input_border_radius)
+      ? ne(e.inputs_style, e.input_border_radius)
       : e.input_border_radius;
   return (
-    n !== void 0 && (t["--ul-theme-border-button-border-radius"] = `${n}px`),
-    r !== void 0 && (t["--ul-theme-border-input-border-radius"] = `${r}px`),
+    n !== void 0 && (a["--ul-theme-border-button-border-radius"] = `${n}px`),
+    r !== void 0 && (a["--ul-theme-border-input-border-radius"] = `${r}px`),
     e.widget_corner_radius &&
-      (t["--ul-theme-border-widget-corner-radius"] =
+      (a["--ul-theme-border-widget-corner-radius"] =
         `${e.widget_corner_radius}px`),
     e.button_border_weight !== void 0 &&
-      (t["--ul-theme-border-button-border-weight"] =
+      (a["--ul-theme-border-button-border-weight"] =
         `${e.button_border_weight}px`),
     e.input_border_weight !== void 0 &&
-      (t["--ul-theme-border-input-border-weight"] =
+      (a["--ul-theme-border-input-border-weight"] =
         `${e.input_border_weight}px`),
     e.widget_border_weight !== void 0 &&
-      (t["--ul-theme-border-widget-border-weight"] =
+      (a["--ul-theme-border-widget-border-weight"] =
         `${e.widget_border_weight}px`),
-    e.buttons_style && (t["--ul-theme-border-buttons-style"] = e.buttons_style),
-    e.inputs_style && (t["--ul-theme-border-inputs-style"] = e.inputs_style),
+    e.buttons_style && (a["--ul-theme-border-buttons-style"] = e.buttons_style),
+    e.inputs_style && (a["--ul-theme-border-inputs-style"] = e.inputs_style),
     e.show_widget_shadow !== void 0 &&
-      (t["--ul-theme-border-show-widget-shadow"] = e.show_widget_shadow
+      (a["--ul-theme-border-show-widget-shadow"] = e.show_widget_shadow
         ? "0px 12px 40px 0px rgba(0, 0, 0, 0.12)"
         : "none"),
-    t
+    a
   );
 }
-function ia(e) {
-  const t = {};
+function it(e) {
+  const a = {};
   e.reference_text_size &&
-    (t["--ul-theme-font-reference-text-size"] = `${e.reference_text_size}px`);
+    (a["--ul-theme-font-reference-text-size"] = `${e.reference_text_size}px`);
   const n = (r, l) => {
     if (r?.size) {
       const s = r.size;
       if (e.reference_text_size) {
-        const i = (e.reference_text_size * s) / 100;
-        t[`--ul-theme-font-${l}-size`] = `${i}px`;
+        const o = (e.reference_text_size * s) / 100;
+        a[`--ul-theme-font-${l}-size`] = `${o}px`;
       } else {
-        const o = s / 100;
-        t[`--ul-theme-font-${l}-size`] = `${o}rem`;
+        const i = s / 100;
+        a[`--ul-theme-font-${l}-size`] = `${i}rem`;
       }
     }
     r?.bold !== void 0 &&
-      (t[`--ul-theme-font-${l}-weight`] = r.bold ? "700" : "400");
+      (a[`--ul-theme-font-${l}-weight`] = r.bold ? "700" : "400");
   };
   return (
     n(e.title, "title"),
@@ -1260,33 +1260,33 @@ function ia(e) {
     n(e.buttons_text, "buttons-text"),
     n(e.input_labels, "input-labels"),
     n(e.links, "links"),
-    e.links_style && (t["--ul-theme-font-links-style"] = e.links_style),
-    t
+    e.links_style && (a["--ul-theme-font-links-style"] = e.links_style),
+    a
   );
 }
-function da(e) {
-  const t = {};
+function dt(e) {
+  const a = {};
   if (
     (e.background_color &&
-      (t["--ul-theme-page-bg-background-color"] = e.background_color),
+      (a["--ul-theme-page-bg-background-color"] = e.background_color),
     e.background_image_url &&
-      (t["--ul-theme-page-bg-background-image-url"] =
+      (a["--ul-theme-page-bg-background-image-url"] =
         e.background_image_url === null || e.background_image_url === ""
           ? "none"
           : `url("${e.background_image_url}")`),
     e.page_layout)
   ) {
     const n = { center: "center", left: "flex-start", right: "flex-end" };
-    t["--ul-theme-page-bg-page-layout"] = n[e.page_layout] || "center";
+    a["--ul-theme-page-bg-page-layout"] = n[e.page_layout] || "center";
   }
-  return t;
+  return a;
 }
-function ua(e) {
-  const t = {};
+function ut(e) {
+  const a = {};
   if (
-    (e.logo_url && (t["--ul-theme-widget-logo-url"] = `"${e.logo_url}"`),
+    (e.logo_url && (a["--ul-theme-widget-logo-url"] = `"${e.logo_url}"`),
     e.logo_height &&
-      (t["--ul-theme-widget-logo-height"] = `${e.logo_height}px`),
+      (a["--ul-theme-widget-logo-height"] = `${e.logo_height}px`),
     e.logo_position)
   ) {
     const n = {
@@ -1295,54 +1295,54 @@ function ua(e) {
       right: "flex-end",
       none: "none",
     };
-    t["--ul-theme-widget-logo-position"] = n[e.logo_position] || "center";
+    a["--ul-theme-widget-logo-position"] = n[e.logo_position] || "center";
   }
   if (e.header_text_alignment) {
-    t["--ul-theme-widget-header-text-alignment"] = e.header_text_alignment;
+    a["--ul-theme-widget-header-text-alignment"] = e.header_text_alignment;
     const n = { center: "center", left: "left", right: "right" };
-    t["--text-align-header"] = n[e.header_text_alignment] || "center";
+    a["--text-align-header"] = n[e.header_text_alignment] || "center";
   }
   return (
     e.social_buttons_layout &&
-      (t["--ul-theme-widget-social-buttons-layout"] = e.social_buttons_layout),
-    t
+      (a["--ul-theme-widget-social-buttons-layout"] = e.social_buttons_layout),
+    a
   );
 }
 let K = {};
-const ma = {
+const mt = {
   "colors.primary": "--ul-theme-color-primary-button",
   "colors.page_background": "--ul-theme-page-bg-background-color",
   logoUrl: "--ul-theme-widget-logo-url",
 };
-function me(e) {
+function ce(e) {
   if (!e?.branding) return;
-  wa();
-  const t = ca(e);
-  pa(t);
+  wt();
+  const a = ct(e);
+  pt(a);
 }
-function ca(e) {
-  const t = e.branding?.themes?.default || {},
-    n = ne(e.branding?.settings),
-    r = fa(t),
-    l = ne(e.organization?.branding);
+function ct(e) {
+  const a = e.branding?.themes?.default || {},
+    n = re(e.branding?.settings),
+    r = ft(a),
+    l = re(e.organization?.branding);
   return { ...n, ...r, ...l };
 }
-function fa(e) {
+function ft(e) {
   return {
-    ...sa(e.colors || {}),
-    ...oa(e.borders || {}),
-    ...ia(e.fonts || {}),
-    ...da(e.pageBackground || e.page_background || {}),
-    ...ua(e.widget || {}),
+    ...st(e.colors || {}),
+    ...ot(e.borders || {}),
+    ...it(e.fonts || {}),
+    ...dt(e.pageBackground || e.page_background || {}),
+    ...ut(e.widget || {}),
   };
 }
-function ne(e) {
-  const t = {};
-  return (e && ha(e, ma, t), t);
+function re(e) {
+  const a = {};
+  return (e && ht(e, mt, a), a);
 }
-function ha(e, t, n) {
-  Object.entries(t).forEach(([r, l]) => {
-    const s = ga(e, r);
+function ht(e, a, n) {
+  Object.entries(a).forEach(([r, l]) => {
+    const s = gt(e, r);
     s &&
       typeof s == "string" &&
       (l === "--ul-theme-widget-logo-url"
@@ -1352,46 +1352,46 @@ function ha(e, t, n) {
           : (n[l] = s));
   });
 }
-function ga(e, t) {
-  return t.split(".").reduce((n, r) => n?.[r], e);
+function gt(e, a) {
+  return a.split(".").reduce((n, r) => n?.[r], e);
 }
-function pa(e) {
-  const t = xa(e);
-  Object.keys(t).length !== 0 && (ba(t), va(t));
+function pt(e) {
+  const a = xt(e);
+  Object.keys(a).length !== 0 && (bt(a), vt(a));
 }
-function xa(e) {
-  const t = {};
+function xt(e) {
+  const a = {};
   return (
     Object.entries(e).forEach(([n, r]) => {
-      K[n] !== r && (t[n] = r);
+      K[n] !== r && (a[n] = r);
     }),
-    t
+    a
   );
 }
-function ba(e) {
-  const t = document.documentElement.style;
+function bt(e) {
+  const a = document.documentElement.style;
   Object.entries(e).forEach(([n, r]) => {
-    t.setProperty(n, r);
+    a.setProperty(n, r);
   });
 }
-function va(e) {
+function vt(e) {
   K = { ...K, ...e };
 }
-function wa() {
+function wt() {
   K = {};
 }
-const ce = g.forwardRef(
+const fe = g.forwardRef(
   (
     {
       selectedCountry: e,
-      placeholder: t = "Select Country",
+      placeholder: a = "Select Country",
       isLoading: n = !1,
       fullWidth: r = !1,
       className: l,
       disabled: s,
-      ...o
+      ...i
     },
-    i
+    o
   ) => {
     const u = d(
         "inline-flex items-center justify-between px-4 py-4 text-left font-medium transition-colors duration-150 ease-in-out",
@@ -1407,35 +1407,35 @@ const ce = g.forwardRef(
       ),
       c = r ? "w-full" : "",
       m = s || n ? "disabled:opacity-70 cursor-not-allowed" : "cursor-pointer";
-    return a.jsxs("button", {
-      ref: i,
+    return t.jsxs("button", {
+      ref: o,
       type: "button",
       disabled: s || n,
       className: d(u, c, m, l),
-      ...o,
+      ...i,
       children: [
-        a.jsx("div", {
+        t.jsx("div", {
           className: "flex items-center space-x-3 flex-1 min-w-0",
           children: e
-            ? a.jsxs(a.Fragment, {
+            ? t.jsxs(t.Fragment, {
                 children: [
-                  a.jsx("div", {
+                  t.jsx("div", {
                     className:
                       "flex-shrink-0 w-6 h-4 flex items-center justify-center",
                     children: e.flag.startsWith("http")
-                      ? a.jsx("img", {
+                      ? t.jsx("img", {
                           src: e.flag,
                           alt: `${e.name} flag`,
                           className: "w-6 h-4 object-cover rounded-sm",
                         })
-                      : a.jsx("span", {
+                      : t.jsx("span", {
                           className: "text-lg",
                           children: e.flag,
                         }),
                   }),
-                  a.jsx("div", {
+                  t.jsx("div", {
                     className: "flex-1 min-w-0",
-                    children: a.jsxs("span", {
+                    children: t.jsxs("span", {
                       className:
                         "theme-universal:text-input-text theme-universal:font-body truncate",
                       children: [e.name, ", ", e.code, ",", " ", e.dialCode],
@@ -1443,23 +1443,23 @@ const ce = g.forwardRef(
                   }),
                 ],
               })
-            : a.jsxs(a.Fragment, {
+            : t.jsxs(t.Fragment, {
                 children: [
-                  a.jsx("div", {
+                  t.jsx("div", {
                     className:
                       "flex-shrink-0 w-6 h-4 theme-universal:bg-input-border rounded-sm",
                   }),
-                  a.jsx("span", {
+                  t.jsx("span", {
                     className:
                       "theme-universal:text-input-labels flex-1 truncate",
-                    children: t,
+                    children: a,
                   }),
                 ],
               }),
         }),
-        a.jsx("div", {
+        t.jsx("div", {
           className: "flex-shrink-0 ml-2",
-          children: a.jsx(Ie, {
+          children: t.jsx(Me, {
             className: d(
               "w-4 h-4 theme-universal:text-input-labels transition-transform duration-200",
               n && "animate-pulse"
@@ -1470,8 +1470,8 @@ const ce = g.forwardRef(
     });
   }
 );
-ce.displayName = "ULThemeCountryCodePicker";
-const ya = {
+fe.displayName = "ULThemeCountryCodePicker";
+const yt = {
   AD: { name: "Andorra", flag: "🇦🇩" },
   AE: { name: "United Arab Emirates", flag: "🇦🇪" },
   AF: { name: "Afghanistan", flag: "🇦🇫" },
@@ -1722,26 +1722,26 @@ const ya = {
   ZM: { name: "Zambia", flag: "🇿🇲" },
   ZW: { name: "Zimbabwe", flag: "🇿🇼" },
 };
-function ja(e, t) {
+function jt(e, a) {
   if (!e) return;
-  const n = ya[e];
+  const n = yt[e];
   return n
-    ? { name: n.name, code: e, dialCode: t ? `+${t}` : "+??", flag: n.flag }
+    ? { name: n.name, code: e, dialCode: a ? `+${a}` : "+??", flag: n.flag }
     : {
         name: `Country ${e}`,
         code: e,
-        dialCode: t ? `+${t}` : "+??",
+        dialCode: a ? `+${a}` : "+??",
         flag: "🏳️",
       };
 }
-function Na(e) {
-  return e.length === 1 && e.some((t) => t.toLowerCase().includes("phone"));
+function Nt(e) {
+  return e.length === 1 && e.some((a) => a.toLowerCase().includes("phone"));
 }
-const fe = () => {
-  const e = g.useMemo(() => new Me(), []),
-    { transaction: t, screen: n } = e,
-    { isSignupEnabled: r, isForgotPasswordEnabled: l, isPasskeyEnabled: s } = t,
-    { signupLink: o, resetPasswordLink: i, texts: u, captchaImage: c } = n;
+const he = () => {
+  const e = g.useMemo(() => new ze(), []),
+    { transaction: a, screen: n } = e,
+    { isSignupEnabled: r, isForgotPasswordEnabled: l, isPasskeyEnabled: s } = a,
+    { signupLink: i, resetPasswordLink: o, texts: u, captchaImage: c } = n;
   return {
     loginIdInstance: e,
     handleLoginId: async (p, v) => {
@@ -1782,71 +1782,71 @@ const fe = () => {
     errors: e.getErrors(),
     captchaImage: c,
     captcha: n.captcha || null,
-    signupLink: o,
-    resetPasswordLink: i,
+    signupLink: i,
+    resetPasswordLink: o,
   };
 };
-function _a() {
+function _t() {
   const {
       handleLoginId: e,
-      errors: t,
+      errors: a,
       resetPasswordLink: n,
       isForgotPasswordEnabled: r,
       loginIdInstance: l,
       texts: s,
-      handlePickCountryCode: o,
-    } = fe(),
-    i = q({ defaultValues: { identifier: "" } }),
+      handlePickCountryCode: i,
+    } = he(),
+    o = q({ defaultValues: { identifier: "" } }),
     {
       formState: { isSubmitting: u },
-    } = i,
+    } = o,
     c = s?.buttonText || "Continue",
     m = s?.forgotPasswordText || "Forgot Password?",
-    f = t?.filter((N) => !N.field || N.field === null) || [],
+    f = a?.filter((N) => !N.field || N.field === null) || [],
     h =
-      C("identifier", t) || C("email", t) || C("phone", t) || C("username", t),
+      P("identifier", a) || P("email", a) || P("phone", a) || P("username", a),
     w = l?.transaction?.allowedIdentifiers || [],
-    { label: p, type: v, autoComplete: y } = ae(w, s),
+    { label: p, type: v, autoComplete: y } = te(w, s),
     b = async (N) => {
       await e(N.identifier);
     },
     _ = n && O(n),
-    j = Na(w);
-  return a.jsx(Z, {
-    ...i,
-    children: a.jsxs("form", {
-      onSubmit: i.handleSubmit(b),
+    j = Nt(w);
+  return t.jsx(Z, {
+    ...o,
+    children: t.jsxs("form", {
+      onSubmit: o.handleSubmit(b),
       className: "space-y-2",
       children: [
         f.length > 0 &&
-          a.jsx("div", {
+          t.jsx("div", {
             className: "space-y-3 mb-4",
             children: f.map((N, L) =>
-              a.jsx(
+              t.jsx(
                 Y,
                 {
                   variant: "destructive",
-                  children: a.jsx(Q, { children: N.message }),
+                  children: t.jsx(Q, { children: N.message }),
                 },
                 L
               )
             ),
           }),
         j &&
-          a.jsx("div", {
+          t.jsx("div", {
             className: "mb-4",
-            children: a.jsx(ce, {
-              selectedCountry: ja(
+            children: t.jsx(fe, {
+              selectedCountry: jt(
                 l?.transaction?.countryCode,
                 l?.transaction?.countryPrefix
               ),
-              onClick: o,
+              onClick: i,
               fullWidth: !0,
               placeholder: "Select Country",
             }),
           }),
-        a.jsx(A, {
-          control: i.control,
+        t.jsx(A, {
+          control: o.control,
           name: "identifier",
           rules: {
             required: "This field is required",
@@ -1856,9 +1856,9 @@ function _a() {
             },
           },
           render: ({ field: N, fieldState: L }) =>
-            a.jsxs(I, {
+            t.jsxs(I, {
               children: [
-                a.jsx(M, {
+                t.jsx(M, {
                   ...N,
                   label: p,
                   type: v,
@@ -1866,15 +1866,15 @@ function _a() {
                   autoComplete: y,
                   error: !!L.error || !!h,
                 }),
-                a.jsx(E, { sdkError: h, hasFormError: !!L.error }),
+                t.jsx(E, { sdkError: h, hasFormError: !!L.error }),
               ],
             }),
         }),
-        a.jsx("div", {
+        t.jsx("div", {
           className: "text-left mb-4",
-          children: r && _ && a.jsx(B, { href: _, children: m }),
+          children: r && _ && t.jsx(B, { href: _, children: m }),
         }),
-        a.jsx(ee, {
+        t.jsx(ee, {
           type: "submit",
           className: "w-full",
           disabled: u,
@@ -1884,65 +1884,65 @@ function _a() {
     }),
   });
 }
-function Sa() {
-  const { loginIdInstance: e, texts: t } = fe();
+function St() {
+  const { loginIdInstance: e, texts: a } = he();
   return (
     g.useEffect(() => {
-      (t?.pageTitle
-        ? (document.title = t.pageTitle)
+      (a?.pageTitle
+        ? (document.title = a.pageTitle)
         : (document.title = "Login"),
-        me(e));
+        ce(e));
     }, []),
-    a.jsx(J, {
+    t.jsx(J, {
       className: "theme-universal",
-      children: a.jsxs("div", {
+      children: t.jsxs("div", {
         className: "login-page min-h-screen flex flex-col z-30",
         children: [
-          a.jsx("main", {
+          t.jsx("main", {
             className:
               "container mx-auto px-4 sm:px-6 lg:px-8 -mt-16 mb-16 z-30 max-w-4xl",
-            children: a.jsx("div", {
+            children: t.jsx("div", {
               className: "mx-auto",
-              children: a.jsx("div", {
+              children: t.jsx("div", {
                 className:
                   "login-card bg-white rounded overflow-hidden w-full shadow-md",
-                children: a.jsxs("div", {
+                children: t.jsxs("div", {
                   className: "p-4 sm:p-6 md:p-8",
                   children: [
-                    a.jsx("h2", {
+                    t.jsx("h2", {
                       className: "welcome-title text-lg sm:text-xl md:text-2xl",
                       children: "Welcome Back",
                     }),
-                    a.jsx("hr", { className: "divider mb-4" }),
-                    a.jsxs("div", {
+                    t.jsx("hr", { className: "divider mb-4" }),
+                    t.jsxs("div", {
                       className: "flex flex-col gap-6",
                       children: [
-                        a.jsxs("aside", {
+                        t.jsxs("aside", {
                           className:
                             "w-full bg-gray-50 rounded p-4 flex flex-col gap-4 justify-center",
                           children: [
-                            a.jsxs("div", {
+                            t.jsxs("div", {
                               className: "wallet-login flex items-start gap-3",
                               children: [
-                                a.jsx("div", {
+                                t.jsx("div", {
                                   className:
                                     "wallet-icon h-10 w-10 rounded overflow-hidden bg-white flex items-center justify-center",
-                                  children: a.jsx("img", {
+                                  children: t.jsx("img", {
                                     src: "https://cdn.dmv.ca.gov/dmv-cdn/prod/isam/images/mdl/ca-dmv-wallet-icon.png",
                                     alt: "CA DMV Wallet",
                                     className:
                                       "h-full w-full object-contain max-h-12 max-w-12",
                                   }),
                                 }),
-                                a.jsxs("div", {
+                                t.jsxs("div", {
                                   children: [
-                                    a.jsx("a", {
+                                    t.jsx("a", {
                                       href: "#",
                                       className:
                                         "wallet-link text-link font-medium links",
                                       children: "Log in with CA DMV Wallet App",
                                     }),
-                                    a.jsx("div", {
+                                    t.jsx("div", {
                                       className:
                                         "wallet-subtitle text-xs text-muted",
                                       children: "No password needed",
@@ -1951,19 +1951,19 @@ function Sa() {
                                 }),
                               ],
                             }),
-                            a.jsx("div", {
+                            t.jsx("div", {
                               className: "section-title mt-2",
                               children: "MyDMV",
                             }),
-                            a.jsxs("p", {
+                            t.jsxs("p", {
                               className:
                                 "register-text mb-0 small-note text-sm",
                               children: [
-                                a.jsx("strong", {
+                                t.jsx("strong", {
                                   children: "Not Registered?",
                                 }),
                                 " In order to log in, you will first need to",
-                                a.jsx("a", {
+                                t.jsx("a", {
                                   href: "#",
                                   className: "text-link underline links ml-1",
                                   children: "create an account",
@@ -1973,9 +1973,9 @@ function Sa() {
                             }),
                           ],
                         }),
-                        a.jsx("section", {
+                        t.jsx("section", {
                           className: "w-full",
-                          children: a.jsx(_a, {}),
+                          children: t.jsx(_t, {}),
                         }),
                       ],
                     }),
@@ -1984,28 +1984,28 @@ function Sa() {
               }),
             }),
           }),
-          a.jsx("footer", { className: "mt-auto" }),
+          t.jsx("footer", { className: "mt-auto" }),
         ],
       }),
     })
   );
 }
-const Ca = Object.freeze(
-  Object.defineProperty({ __proto__: null, default: Sa }, Symbol.toStringTag, {
+const Pt = Object.freeze(
+  Object.defineProperty({ __proto__: null, default: St }, Symbol.toStringTag, {
     value: "Module",
   })
 );
-function Pa({ className: e, ...t }) {
-  return a.jsx("div", {
+function Ct({ className: e, ...a }) {
+  return t.jsx("div", {
     "data-slot": "card",
     className: d(
       "bg-card text-card-foreground shadow-bevel-2xl flex flex-col gap-6 rounded-4xl py-6",
       e
     ),
-    ...t,
+    ...a,
   });
 }
-const La = ({ children: e, className: t, ...n }) => {
+const Lt = ({ children: e, className: a, ...n }) => {
     const r = d(
       "px-10",
       "py-10",
@@ -2014,21 +2014,21 @@ const La = ({ children: e, className: t, ...n }) => {
       "theme-universal:rounded-widget",
       "theme-universal:shadow-widget",
       "theme-universal:border-(length:--border-widget)",
-      t
+      a
     );
-    return a.jsx(Pa, { className: r, ...n, children: e });
+    return t.jsx(Ct, { className: r, ...n, children: e });
   },
   $ = () => {
-    const e = g.useMemo(() => new ze(), []),
-      { transaction: t, screen: n } = e,
+    const e = g.useMemo(() => new Re(), []),
+      { transaction: a, screen: n } = e,
       {
         isSignupEnabled: r,
         isForgotPasswordEnabled: l,
         isPasskeyEnabled: s,
-      } = t,
+      } = a,
       {
-        signupLink: o,
-        resetPasswordLink: i,
+        signupLink: i,
+        resetPasswordLink: o,
         texts: u,
         captchaImage: c,
         editIdentifierLink: m,
@@ -2052,59 +2052,59 @@ const La = ({ children: e, className: t, ...n }) => {
       errors: e.getErrors(),
       links: f,
       editIdentifierLink: m,
-      signupLink: o,
-      resetPasswordLink: i,
+      signupLink: i,
+      resetPasswordLink: o,
       captchaImage: c,
       data: h,
     };
   };
-function ka() {
-  const { isSignupEnabled: e, signupLink: t, texts: n } = $();
+function kt() {
+  const { isSignupEnabled: e, signupLink: a, texts: n } = $();
   if (!e) return null;
-  const r = O(t),
+  const r = O(a),
     l = n?.footerText || "Don't have an account?",
     s = n?.footerLinkText || "Sign up";
-  return a.jsxs("div", {
+  return t.jsxs("div", {
     className: "mt-4 text-left",
     children: [
-      a.jsx("span", { className: "text-sm pr-1", children: l }),
-      r && a.jsx(B, { href: r, children: s }),
+      t.jsx("span", { className: "text-sm pr-1", children: l }),
+      r && t.jsx(B, { href: r, children: s }),
     ],
   });
 }
-function Ta({ className: e, ...t }) {
-  return a.jsx(Re, {
+function Tt({ className: e, ...a }) {
+  return t.jsx(Be, {
     "data-slot": "avatar",
     className: d(
       "relative flex size-8 shrink-0 overflow-hidden rounded-full",
       e
     ),
-    ...t,
+    ...a,
   });
 }
-function Ea({ className: e, ...t }) {
-  return a.jsx(Be, {
+function Et({ className: e, ...a }) {
+  return t.jsx(Oe, {
     "data-slot": "avatar-image",
     className: d("aspect-square size-full", e),
-    ...t,
+    ...a,
   });
 }
-const Fa = ({ imageUrl: e, altText: t, className: n, ...r }) => {
+const Ft = ({ imageUrl: e, altText: a, className: n, ...r }) => {
     const l = W("--ul-theme-widget-logo-url"),
       s = W("--ul-theme-widget-logo-position") === "none",
-      o = "flex flex-wrap justify-widget-logo",
-      i = "h-(--height-widget-logo)",
+      i = "flex flex-wrap justify-widget-logo",
+      o = "h-(--height-widget-logo)",
       u = l || e;
     return (
       !s &&
-      a.jsx("div", {
-        className: d(o, n),
-        children: a.jsx(Ta, {
+      t.jsx("div", {
+        className: d(i, n),
+        children: t.jsx(Tt, {
           className: "size-auto rounded-none",
-          children: a.jsx(Ea, {
+          children: t.jsx(Et, {
             src: u,
-            alt: t,
-            className: d(i),
+            alt: a,
+            className: d(o),
             loading: "eager",
             decoding: "async",
             fetchPriority: "high",
@@ -2114,32 +2114,32 @@ const Fa = ({ imageUrl: e, altText: t, className: n, ...r }) => {
       })
     );
   },
-  Aa = ({ children: e, className: t, ...n }) =>
-    a.jsx("p", {
+  At = ({ children: e, className: a, ...n }) =>
+    t.jsx("p", {
       className: d(
         "mb-4 text-body-text justify-text-header text-(length:--ul-theme-font-subtitle-size) font-subtitle",
-        t
+        a
       ),
       ...n,
       children: e,
     }),
-  Ia = ({ children: e, className: t, ...n }) =>
-    a.jsx("h1", {
+  It = ({ children: e, className: a, ...n }) =>
+    t.jsx("h1", {
       className: d(
         "mt-6 mb-4 text-header justify-text-header text-(length:--ul-theme-font-title-size) font-title",
-        t
+        a
       ),
       ...n,
       children: e,
     });
-function Ma() {
+function Mt() {
   const { texts: e } = $(),
-    t = e?.logoAltText || "Application Logo";
-  return a.jsxs(a.Fragment, {
+    a = e?.logoAltText || "Application Logo";
+  return t.jsxs(t.Fragment, {
     children: [
-      a.jsx(Fa, { altText: t }),
-      a.jsx(Ia, { children: e?.title || "Welcome" }),
-      a.jsx(Aa, {
+      t.jsx(Ft, { altText: a }),
+      t.jsx(It, { children: e?.title || "Welcome" }),
+      t.jsx(At, {
         children:
           e?.description ||
           "Enter your password for My Company to continue to My App",
@@ -2147,21 +2147,21 @@ function Ma() {
     ],
   });
 }
-function za() {
+function zt() {
   const {
       links: e,
-      data: t,
+      data: a,
       handleLoginPassword: n,
       errors: r,
       isCaptchaAvailable: l,
       captchaImage: s,
-      resetPasswordLink: o,
-      isForgotPasswordEnabled: i,
+      resetPasswordLink: i,
+      isForgotPasswordEnabled: o,
       loginPasswordInstance: u,
       texts: c,
     } = $(),
     m = q({
-      defaultValues: { username: t?.username || "", password: "", captcha: "" },
+      defaultValues: { username: a?.username || "", password: "", captcha: "" },
     }),
     {
       formState: { isSubmitting: f },
@@ -2172,54 +2172,54 @@ function za() {
     v = "CAPTCHA challenge",
     y = c?.forgotPasswordText || "Forgot Password?",
     b = r?.filter((S) => !S.field || S.field === null) || [],
-    _ = C("username", r) || C("email", r),
-    j = C("password", r),
-    N = C("captcha", r),
+    _ = P("username", r) || P("email", r),
+    j = P("password", r),
+    N = P("captcha", r),
     L = u?.transaction?.getAllowedIdentifiers() || [],
     F = u?.transaction?.getPasswordPolicy(),
-    { label: z, type: V } = ae(L, c),
+    { label: z, type: V } = te(L, c),
     G = async (S) => {
       await n(S.username, S.password, S.captcha);
     },
-    R = o && O(o),
+    R = i && O(i),
     D = O(e?.edit_identifier) || "";
-  return a.jsx(Z, {
+  return t.jsx(Z, {
     ...m,
-    children: a.jsxs("form", {
+    children: t.jsxs("form", {
       onSubmit: m.handleSubmit(G),
       className: "space-y-2",
       children: [
         b.length > 0 &&
-          a.jsx("div", {
+          t.jsx("div", {
             className: "space-y-3 mb-4",
-            children: b.map((S, P) =>
-              a.jsx(Y, { children: a.jsx(Q, { children: S.message }) }, P)
+            children: b.map((S, C) =>
+              t.jsx(Y, { children: t.jsx(Q, { children: S.message }) }, C)
             ),
           }),
-        a.jsx(A, {
+        t.jsx(A, {
           control: m.control,
           name: "username",
-          render: ({ field: S, fieldState: P }) =>
-            a.jsxs(I, {
+          render: ({ field: S, fieldState: C }) =>
+            t.jsxs(I, {
               children: [
-                a.jsx(M, {
+                t.jsx(M, {
                   ...S,
                   label: z,
                   type: V,
-                  value: t?.username || "",
-                  error: !!P.error || !!_,
+                  value: a?.username || "",
+                  error: !!C.error || !!_,
                   readOnly: !0,
-                  endAdornment: a.jsx(B, {
+                  endAdornment: t.jsx(B, {
                     href: D,
                     children: c?.editEmailText || "Edit",
                   }),
                   className: "pr-[16px]",
                 }),
-                a.jsx(E, { sdkError: _, hasFormError: !!P.error }),
+                t.jsx(E, { sdkError: _, hasFormError: !!C.error }),
               ],
             }),
         }),
-        a.jsx(A, {
+        t.jsx(A, {
           control: m.control,
           name: "password",
           rules: {
@@ -2235,23 +2235,23 @@ function za() {
                 }
               : void 0,
           },
-          render: ({ field: S, fieldState: P }) =>
-            a.jsxs(I, {
+          render: ({ field: S, fieldState: C }) =>
+            t.jsxs(I, {
               children: [
-                a.jsx(X, {
+                t.jsx(X, {
                   ...S,
                   label: w,
                   autoFocus: !0,
                   autoComplete: "current-password",
-                  error: !!P.error || !!j,
+                  error: !!C.error || !!j,
                 }),
-                a.jsx(E, { sdkError: j, hasFormError: !!P.error }),
+                t.jsx(E, { sdkError: j, hasFormError: !!C.error }),
               ],
             }),
         }),
         l &&
           (j || N || b.length > 0) &&
-          a.jsx(ue, {
+          t.jsx(me, {
             control: m.control,
             name: "captcha",
             label: p,
@@ -2264,11 +2264,11 @@ function za() {
               maxLength: { value: 15, message: "CAPTCHA too long" },
             },
           }),
-        a.jsx("div", {
+        t.jsx("div", {
           className: "text-left mb-4",
-          children: i && R && a.jsx(B, { href: R, children: y }),
+          children: o && R && t.jsx(B, { href: R, children: y }),
         }),
-        a.jsx(ee, {
+        t.jsx(ee, {
           type: "submit",
           className: "w-full",
           disabled: f,
@@ -2278,32 +2278,32 @@ function za() {
     }),
   });
 }
-function Ra() {
+function Rt() {
   const { loginPasswordInstance: e } = $();
   return (
-    me(e),
-    a.jsx(J, {
+    ce(e),
+    t.jsx(J, {
       className: "theme-universal",
-      children: a.jsxs(La, {
+      children: t.jsxs(Lt, {
         className: "w-full max-w-[400px] gap-0",
-        children: [a.jsx(Ma, {}), a.jsx(za, {}), a.jsx(ka, {})],
+        children: [t.jsx(Mt, {}), t.jsx(zt, {}), t.jsx(kt, {})],
       }),
     })
   );
 }
-const Ba = Object.freeze(
+const Bt = Object.freeze(
     Object.defineProperty(
-      { __proto__: null, default: Ra },
+      { __proto__: null, default: Rt },
       Symbol.toStringTag,
       { value: "Module" }
     )
   ),
-  Oa = "modulepreload",
-  Ua = function (e) {
+  Ot = "modulepreload",
+  Ut = function (e) {
     return "/" + e;
   },
-  re = {},
-  H = function (t, n, r) {
+  le = {},
+  H = function (a, n, r) {
     let l = Promise.resolve();
     if (n && n.length > 0) {
       let u = function (c) {
@@ -2317,22 +2317,22 @@ const Ba = Object.freeze(
         );
       };
       document.getElementsByTagName("link");
-      const o = document.querySelector("meta[property=csp-nonce]"),
-        i = o?.nonce || o?.getAttribute("nonce");
+      const i = document.querySelector("meta[property=csp-nonce]"),
+        o = i?.nonce || i?.getAttribute("nonce");
       l = u(
         n.map((c) => {
-          if (((c = Ua(c)), c in re)) return;
-          re[c] = !0;
+          if (((c = Ut(c)), c in le)) return;
+          le[c] = !0;
           const m = c.endsWith(".css"),
             f = m ? '[rel="stylesheet"]' : "";
           if (document.querySelector(`link[href="${c}"]${f}`)) return;
           const h = document.createElement("link");
           if (
-            ((h.rel = m ? "stylesheet" : Oa),
+            ((h.rel = m ? "stylesheet" : Ot),
             m || (h.as = "script"),
             (h.crossOrigin = ""),
             (h.href = c),
-            i && h.setAttribute("nonce", i),
+            o && h.setAttribute("nonce", o),
             document.head.appendChild(h),
             m)
           )
@@ -2345,48 +2345,60 @@ const Ba = Object.freeze(
         })
       );
     }
-    function s(o) {
-      const i = new Event("vite:preloadError", { cancelable: !0 });
-      if (((i.payload = o), window.dispatchEvent(i), !i.defaultPrevented))
-        throw o;
+    function s(i) {
+      const o = new Event("vite:preloadError", { cancelable: !0 });
+      if (((o.payload = i), window.dispatchEvent(o), !o.defaultPrevented))
+        throw i;
     }
-    return l.then((o) => {
-      for (const i of o || []) i.status === "rejected" && s(i.reason);
-      return t().catch(s);
+    return l.then((i) => {
+      for (const o of i || []) o.status === "rejected" && s(o.reason);
+      return a().catch(s);
     });
   };
-async function Va() {}
-const Ga = {
-    "login-id": g.lazy(() => H(() => Promise.resolve().then(() => Ca), void 0)),
-    login: g.lazy(() => H(() => Promise.resolve().then(() => la), void 0)),
+async function Vt() {}
+const Gt = {
+    "login-id": g.lazy(() => H(() => Promise.resolve().then(() => Pt), void 0)),
+    login: g.lazy(() => H(() => Promise.resolve().then(() => lt), void 0)),
     "login-password": g.lazy(() =>
-      H(() => Promise.resolve().then(() => Ba), void 0)
+      H(() => Promise.resolve().then(() => Bt), void 0)
     ),
   },
-  Ka = (e) => Ga[e] || null,
-  $a = () => {
-    const [e, t] = g.useState("login");
+  Kt = (e) => Gt[e] || null,
+  $t = 250,
+  Dt = () => {
+    const [e, a] = g.useState("login");
     g.useEffect(() => {
-      const r = Oe();
-      t(r || "login");
+      const r = ae();
+      a(r || "login");
+      let l = !0;
+      const i = setInterval(() => {
+        if (l)
+          try {
+            const o = ae();
+            o && o !== e && a(o);
+          } catch {}
+      }, $t);
+      return () => {
+        ((l = !1), clearInterval(i));
+      };
     }, []);
-    const n = Ka(e);
-    return a.jsx(g.Suspense, {
-      fallback: a.jsx("div", { children: "Loading..." }),
+    const n = Kt(e);
+    return t.jsx(g.Suspense, {
+      fallback: t.jsx("div", { children: "Loading..." }),
       children: n
-        ? a.jsx(n, {})
-        : a.jsxs("div", { children: ['Screen "', e, '" not implemented yet'] }),
+        ? t.jsx(n, {})
+        : t.jsxs("div", { children: ['Screen "', e, '" not implemented yet'] }),
     });
   };
-async function Da() {
-  await Va();
+async function Ht() {
+  await Vt();
   const e = document.createElement("div");
   ((e.id = "root"),
     document.body.appendChild(e),
     Ue.createRoot(document.getElementById("root")).render(
-      a.jsx(g.StrictMode, { children: a.jsx($a, {}) })
+      t.jsx(g.StrictMode, { children: t.jsx(Dt, {}) })
     ));
 }
-Da();
-export { Sa as L, Ra as a };
-//# sourceMappingURL=index.BCOOuOhK.js.map
+Ht();
+export { St as L, Rt as a };
+//# sourceMappingURL=index.cTRT0YSg.js.map
