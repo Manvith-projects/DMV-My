@@ -222,7 +222,7 @@ jobs:
         if: steps.check-targets.outputs.has_targets == 'false'
         shell: bash
         run: |
-          echo "${{ secrets.S3_CDN_URL }}"
+         
           echo "ℹ️ No screens are targeted for deployment."
           echo "All screens in deploy_config.yml are set to false."
           echo "Skipping build, upload, and configuration steps."
