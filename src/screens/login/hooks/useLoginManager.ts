@@ -12,21 +12,21 @@ export const useLoginManager = () => {
   const { isSignupEnabled, isForgotPasswordEnabled, passwordPolicy } =
     transaction;
 
-  const { signupLink, resetPasswordLink, texts, captchaImage } = screen;
+  const { signupLink, resetPasswordLink, texts } = screen;
 
   const handleLogin = async (
     username: string,
-    password: string,
-    captcha?: string
+    password: string
+    // captcha?: string
   ): Promise<void> => {
-    const options: { username: string; password: string; captcha?: string } = {
+    const options: { username: string; password: string } = {
       username: username?.trim() || "",
       password: password || "",
     };
 
-    if (screen.isCaptchaAvailable && captcha?.trim()) {
-      options.captcha = captcha.trim();
-    }
+    // if (screen.isCaptchaAvailable && captcha?.trim()) {
+    //   options.captcha = captcha.trim();
+    // }
 
     executeSafely(`Login with options: ${JSON.stringify(options)}`, () =>
       loginInstance.login(options)
@@ -46,9 +46,9 @@ export const useLoginManager = () => {
     texts: (texts || {}) as ScreenMembersOnLogin["texts"],
     isSignupEnabled: isSignupEnabled === true,
     isForgotPasswordEnabled: isForgotPasswordEnabled === true,
-    isCaptchaAvailable: screen.isCaptchaAvailable === true,
+    // isCaptchaAvailable: screen.isCaptchaAvailable === false,
     errors: loginInstance.getError(),
-    captchaImage,
+    // captchaImage,
     signupLink,
     resetPasswordLink,
     allowedIdentifiers: transaction.allowedIdentifiers || [],
