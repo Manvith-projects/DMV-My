@@ -28,6 +28,15 @@ export const useLoginManager = () => {
     //   options.captcha = captcha.trim();
     // }
 
+    console.log("=== LOGIN PARAMETERS ===");
+    console.log("Parameters being sent to server:", {
+      username: options.username,
+      password: options.password ? "[REDACTED]" : "(empty)",
+      passwordLength: options.password?.length || 0,
+    });
+    console.log("Full options object:", options);
+    console.log("========================");
+
     executeSafely(`Login with options: ${JSON.stringify(options)}`, () =>
       loginInstance.login(options)
     );
