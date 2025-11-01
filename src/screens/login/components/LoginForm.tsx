@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 
 import type { Error } from "@auth0/auth0-acul-js";
 
-// import Captcha from "@/components/Captcha";
+import Captcha from "@/components/Captcha";
 import { ULThemeFloatingLabelField } from "@/components/form/ULThemeFloatingLabelField";
 import { ULThemeFormMessage } from "@/components/form/ULThemeFormMessage";
 import { Form, FormField, FormItem } from "@/components/ui/form";
@@ -26,8 +26,8 @@ function LoginForm() {
   const {
     handleLogin,
     errors,
-    // isCaptchaAvailable,
-    // captchaImage,
+    isCaptchaAvailable,
+    captchaImage,
     resetPasswordLink,
     isForgotPasswordEnabled,
     texts,
@@ -49,8 +49,8 @@ function LoginForm() {
 
   // Handle text fallbacks in component
   const buttonText = texts?.buttonText || "Login";
-  // const captchaLabel = texts?.captchaCodePlaceholder?.concat("*") || "CAPTCHA*";
-  // const captchaImageAlt = "CAPTCHA challenge"; // Default fallback
+  const captchaLabel = texts?.captchaCodePlaceholder?.concat("*") || "CAPTCHA*";
+  const captchaImageAlt = "CAPTCHA challenge"; // Default fallback
   const forgotPasswordText = texts?.forgotPasswordText || "Forgot Password?";
 
   // Use getIdentifierDetails pattern for username label
@@ -71,7 +71,7 @@ function LoginForm() {
     getFieldError("username", errors) || getFieldError("email", errors);
 
   const passwordSDKError = getFieldError("password", errors);
-  // const captchaSDKError = getFieldError("captcha", errors);
+  const captchaSDKError = getFieldError("captcha", errors);
 
   // Proper submit handler with form data
   const onSubmit = async (data: LoginFormData) => {
@@ -163,7 +163,7 @@ function LoginForm() {
         />
 
         {/* CAPTCHA Box */}
-        {/* {isCaptchaAvailable && (
+        {isCaptchaAvailable && (
           <Captcha
             control={form.control}
             name="captcha"
@@ -179,7 +179,7 @@ function LoginForm() {
               },
             }}
           />
-        )} */}
+        )}
 
         {/* Forgot Password link */}
         <div className="text-left ">
