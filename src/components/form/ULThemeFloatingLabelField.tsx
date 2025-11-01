@@ -38,10 +38,13 @@ const ulThemeFloatingLabelFieldVariants = cva(
     // Floating Label Background
     "theme-universal:[&_label]:bg-input-bg",
 
-    // Floating Label - Base Styling (applies to all labels)
+    // Floating Label - Base Styling (applies to all labels) with override
     "theme-universal:[&_label]:text-input-labels",
     "theme-universal:[&_label]:text-(length:--ul-theme-font-input-labels-size)",
     "theme-universal:[&_label]:font-input-label",
+    "[&_label]:!text-[#16324a]",
+    "[&_label]:!text-sm",
+    "[&_label]:!font-medium",
   ],
   {
     variants: {

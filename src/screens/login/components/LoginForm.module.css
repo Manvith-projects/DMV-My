@@ -1,0 +1,50 @@
+/* Tailwind-based CSS module for LoginForm
+   Uses @apply to compose utility classes so the inputs and button
+   match the desired visual style while keeping styles scoped.
+*/
+.loginForm {
+  @apply w-full max-w-[720px] mx-auto p-0;
+}
+
+.fieldWrapper {
+  @apply w-full mb-4;
+}
+
+.fieldLabel {
+  @apply block text-sm font-medium text-slate-700 mb-2;
+}
+
+.inputRoot {
+  /* inputs: full width, rounded, subtle border, clear focus */
+  @apply block w-full box-border px-3 py-2 rounded-md border border-slate-300 bg-white text-slate-900 text-base placeholder-slate-400;
+  transition:
+    border-color 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.inputRoot:focus {
+  @apply outline-none border-blue-500 ring-2 ring-blue-200;
+}
+
+.passwordWrapper {
+  @apply relative;
+}
+
+.formMessage {
+  @apply mt-2 text-sm text-rose-600;
+}
+
+.forgotLink {
+  @apply inline-block mt-2 text-sm text-blue-600 font-semibold underline;
+}
+
+.primaryBtn {
+  @apply w-[162px] rounded-full py-3 px-5 bg-blue-600 text-white font-semibold hover:bg-blue-700 disabled:opacity-60 disabled:cursor-not-allowed;
+}
+
+/* small responsive padding tweak */
+@media (min-width: 768px) {
+  .loginForm {
+    @apply px-2;
+  }
+}

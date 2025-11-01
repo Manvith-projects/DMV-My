@@ -1,0 +1,52 @@
+{
+  "rendering_mode": "advanced",
+  "context_configuration": [
+    "branding.settings",
+    "branding.themes.default",
+    "screen.texts"
+  ],
+  "default_head_tags_disabled": false,
+  "head_tags": [
+    {
+      "tag": "base",
+      "attributes": {
+        "href": "http://localhost:8080/"
+      }
+    },
+    {
+      "tag": "meta",
+      "attributes": {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1"
+      }
+    },
+    {
+      "tag": "link",
+      "attributes": {
+        "rel": "stylesheet",
+        "href": "http://localhost:8080/assets/shared/style.pHZC8_D8.css"
+      }
+    },
+    {
+      "tag": "script",
+      "attributes": {
+        "src": "http://localhost:8080/assets/main.DB9h6Gcv.js",
+        "type": "module"
+      }
+    },
+    {
+      "tag": "script",
+      "attributes": {
+        "src": "http://localhost:8080/assets/shared/vendor.OAnuMhII.js",
+        "type": "module"
+      }
+    },
+    {
+      "tag": "script",
+      "attributes": {
+        "src": "http://localhost:8080/assets/login/index.BWETZAeL.js",
+        "type": "module"
+      }
+    }
+  ]
+}

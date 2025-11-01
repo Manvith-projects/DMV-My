@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 
 import type { Error } from "@auth0/auth0-acul-js";
 
-import Captcha from "@/components/Captcha";
+// import Captcha from "@/components/Captcha";
 import { ULThemeFloatingLabelField } from "@/components/form/ULThemeFloatingLabelField";
 import { ULThemeFormMessage } from "@/components/form/ULThemeFormMessage";
 import { Form, FormField, FormItem } from "@/components/ui/form";
@@ -26,8 +26,8 @@ function LoginForm() {
   const {
     handleLogin,
     errors,
-    isCaptchaAvailable,
-    captchaImage,
+    // isCaptchaAvailable,
+    // captchaImage,
     resetPasswordLink,
     isForgotPasswordEnabled,
     texts,
@@ -48,9 +48,9 @@ function LoginForm() {
   } = form;
 
   // Handle text fallbacks in component
-  const buttonText = texts?.buttonText || "Continue";
-  const captchaLabel = texts?.captchaCodePlaceholder?.concat("*") || "CAPTCHA*";
-  const captchaImageAlt = "CAPTCHA challenge"; // Default fallback
+  const buttonText = texts?.buttonText || "Login";
+  // const captchaLabel = texts?.captchaCodePlaceholder?.concat("*") || "CAPTCHA*";
+  // const captchaImageAlt = "CAPTCHA challenge"; // Default fallback
   const forgotPasswordText = texts?.forgotPasswordText || "Forgot Password?";
 
   // Use getIdentifierDetails pattern for username label
@@ -71,7 +71,7 @@ function LoginForm() {
     getFieldError("username", errors) || getFieldError("email", errors);
 
   const passwordSDKError = getFieldError("password", errors);
-  const captchaSDKError = getFieldError("captcha", errors);
+  // const captchaSDKError = getFieldError("captcha", errors);
 
   // Proper submit handler with form data
   const onSubmit = async (data: LoginFormData) => {
@@ -95,7 +95,6 @@ function LoginForm() {
           </div>
         )}
 
-        {/* Username/Email input field */}
         <FormField
           control={form.control}
           name="username"
@@ -115,6 +114,7 @@ function LoginForm() {
                 autoFocus={true}
                 autoComplete={usernameAutoComplete}
                 error={!!fieldState.error || !!usernameSDKError}
+                className="!w-3/4 !px-3.5 !py-3 !text-base !border !border-[#c4d4e0] !rounded-md focus:!outline-none focus:!border-[#4a90e2] focus:!ring-2 focus:!ring-[#4a90e2]/20 !bg-white !text-[#333333] placeholder:!text-[#999999]"
               />
               <ULThemeFormMessage
                 sdkError={usernameSDKError}
@@ -123,7 +123,11 @@ function LoginForm() {
             </FormItem>
           )}
         />
-
+        <h3>
+          <a href="#" className="text-link underline links text-sm">
+            No longer have access to your email address?
+          </a>
+        </h3>
         {/* Password input field */}
         <FormField
           control={form.control}
@@ -148,6 +152,7 @@ function LoginForm() {
                 label={passwordLabel}
                 autoComplete="current-password"
                 error={!!fieldState.error || !!passwordSDKError}
+                className="!w-3/4 !px-3.5 !py-3 !text-base !border !border-[#c4d4e0] !rounded-md focus:!outline-none focus:!border-[#4a90e2] focus:!ring-2 focus:!ring-[#4a90e2]/20 !bg-white !text-[#333333] placeholder:!text-[#999999]"
               />
               <ULThemeFormMessage
                 sdkError={passwordSDKError}
@@ -158,7 +163,7 @@ function LoginForm() {
         />
 
         {/* CAPTCHA Box */}
-        {isCaptchaAvailable && (
+        {/* {isCaptchaAvailable && (
           <Captcha
             control={form.control}
             name="captcha"
@@ -174,12 +179,15 @@ function LoginForm() {
               },
             }}
           />
-        )}
+        )} */}
 
         {/* Forgot Password link */}
-        <div className="text-left">
+        <div className="text-left ">
           {isForgotPasswordEnabled && localizedResetPasswordLink && (
-            <ULThemeLink href={localizedResetPasswordLink}>
+            <ULThemeLink
+              href={localizedResetPasswordLink}
+              className="text-link underline links"
+            >
               {forgotPasswordText}
             </ULThemeLink>
           )}
@@ -188,7 +196,7 @@ function LoginForm() {
         {/* Submit button */}
         <ULThemePrimaryButton
           type="submit"
-          className="w-full"
+          className="!w-[162px] !rounded-full !bg-[#126ba5] hover:!bg-[#0f5a8a] !text-white !font-bold"
           disabled={isSubmitting}
         >
           {buttonText}
